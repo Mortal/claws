@@ -388,6 +388,14 @@ static MimeInfo *pgpinline_decrypt(MimeInfo *mimeinfo)
 			privacy_set_error(_("Couldn't write to decrypted file %s"), fname);
 			goto FILE_ERROR;
 		}
+		if (chars[len - 1] != '\n') {
+			if (fwrite("\n", 1, 1, dstfp) < 1) {
+				FILE_OP_ERROR(fname, "fwrite");
+				g_free(chars);
+				privacy_set_error(_("Couldn't write to decrypted file %s"), fname);
+				goto FILE_ERROR;
+			}
+		}
 	}
 	g_free(chars);
 	/* Store any part after encrypted text */
