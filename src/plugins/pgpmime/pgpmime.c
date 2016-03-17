@@ -310,6 +310,67 @@ static gboolean pgpmime_is_encrypted(MimeInfo *mimeinfo)
 	return TRUE;
 }
 
+static gboolean pgpmime_is_mixed_encrypted(MimeInfo *mimeinfo)
+{
+	MimeInfo *tmpinfo;
+	const gchar *begin_indicator = "-----BEGIN PGP MESSAGE-----";
+	const gchar *end_indicator = "-----END PGP MESSAGE-----";
+	gchar *textdata;
+
+	if (mimeinfo->type != MIMETYPE_MULTIPART)
+		return FALSE;
+	if (g_ascii_strcasecmp(mimeinfo->subtype, "mixed"))
+		return FALSE;
+	if (g_node_n_children(mimeinfo->node) != 3)
+		return FALSE;
+
+	tmpinfo = (MimeInfo *) g_node_nth_child(mimeinfo->node, 0)->data;
+	if (tmpinfo->type != MIMETYPE_TEXT)
+		return FALSE;
+	if (g_ascii_strcasecmp(tmpinfo->subtype, "plain"))
+		return FALSE;
+
+	tmpinfo = (MimeInfo *) g_node_nth_child(mimeinfo->node, 1)->data;
+	if (tmpinfo->type != MIMETYPE_APPLICATION)
+		return FALSE;
+	if (g_ascii_strcasecmp(tmpinfo->subtype, "pgp-encrypted"))
+		return FALSE;
+
+	tmpinfo = (MimeInfo *) g_node_nth_child(mimeinfo->node, 2)->data;
+	if (tmpinfo->type != MIMETYPE_APPLICATION)
+		return FALSE;
+	if (g_ascii_strcasecmp(tmpinfo->subtype, "octet-stream"))
+		return FALSE;
+
+	textdata = get_part_as_string(tmpinfo);
+	if (!textdata)
+		return FALSE;
+
+	if (!pgp_locate_armor_header(textdata, begin_indicator)) {
+		g_free(textdata);
+		return FALSE;
+	}
+	if (!pgp_locate_armor_header(textdata, end_indicator)) {
+		g_free(textdata);
+		return FALSE;
+	}
+
+	g_free(textdata);
+
+	return TRUE;
+}
+
+static gboolean pgpmime_is_encrypted_any(MimeInfo *mimeinfo)
+{
+	if (mimeinfo->type != MIMETYPE_MULTIPART)
+		return FALSE;
+	if (!g_ascii_strcasecmp(mimeinfo->subtype, "mixed"))
+		return pgpmime_is_mixed_encrypted(mimeinfo);
+	if (!g_ascii_strcasecmp(mimeinfo->subtype, "encrypted"))
+		return pgpmime_is_encrypted(mimeinfo);
+	return FALSE;
+}
+
 static MimeInfo *pgpmime_decrypt(MimeInfo *mimeinfo)
 {
 	MimeInfo *encinfo, *decinfo, *parseinfo;
@@ -323,16 +384,22 @@ static MimeInfo *pgpmime_decrypt(MimeInfo *mimeinfo)
 	gchar *chars;
 	size_t len;
 	gpgme_error_t err;
+	int encchild;
 
 	if ((err = gpgme_new(&ctx)) != GPG_ERR_NO_ERROR) {
 		debug_print(("Couldn't initialize GPG context, %s"), gpgme_strerror(err));
 		privacy_set_error(_("Couldn't initialize GPG context, %s"), gpgme_strerror(err));
 		return NULL;
 	}
-	
-	cm_return_val_if_fail(pgpmime_is_encrypted(mimeinfo), NULL);
-	
-	encinfo = (MimeInfo *) g_node_nth_child(mimeinfo->node, 1)->data;
+
+	if (pgpmime_is_encrypted(mimeinfo)) {
+		encchild = 1;
+	} else if (pgpmime_is_mixed_encrypted(mimeinfo)) {
+		encchild = 2;
+	} else {
+		return NULL;
+	}
+	encinfo = (MimeInfo *) g_node_nth_child(mimeinfo->node, encchild)->data;
 
 	cipher = sgpgme_data_from_mimeinfo(encinfo);
 	plain = sgpgme_decrypt_verify(cipher, &sigstat, ctx);
@@ -760,7 +827,7 @@ static PrivacySystem pgpmime_system = {
 	pgpmime_get_sig_info_short,	/* get_sig_info_short(MimeInfo *) */
 	pgpmime_get_sig_info_full,	/* get_sig_info_full(MimeInfo *) */
 
-	pgpmime_is_encrypted,		/* is_encrypted(MimeInfo *) */
+	pgpmime_is_encrypted_any,	/* is_encrypted(MimeInfo *) */
 	pgpmime_decrypt,		/* decrypt(MimeInfo *) */
 
 	TRUE,
