@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Claws Mail 3.13.0\n"
 "Report-Msgid-Bugs-To: paul@claws-mail.org\n"
-"POT-Creation-Date: 2015-12-14 11:20+0000\n"
+"POT-Creation-Date: 2016-07-31 12:35+0200\n"
 "PO-Revision-Date: 2015-12-13 18:34+0000\n"
 "Last-Translator: Flammie Pirinen <flammie@iki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
@@ -104,7 +104,7 @@ msgid "'Get Mail' retrieves mail from the checked accounts"
 msgstr "Hae viestit hakee viestit merkityiltä tileiltä"
 
 #: src/account.c:1567 src/addrduplicates.c:471 src/addressadd.c:215
-#: src/addressbook.c:125 src/compose.c:7233 src/editaddress.c:1265
+#: src/addressbook.c:125 src/compose.c:7220 src/editaddress.c:1265
 #: src/editaddress.c:1322 src/editaddress.c:1342
 #: src/editaddress_other_attributes_ldap.c:302
 #: src/editaddress_other_attributes_ldap.c:350 src/editbook.c:170
@@ -965,20 +965,19 @@ msgstr "Osoitteiden päivitys"
 msgid "Update failed. Changes not written to Directory."
 msgstr "Päivitys epäonnistui. Muutoksia ei kirjoitettu hakemistoon."
 
-#: src/alertpanel.c:146 src/compose.c:9482
+#: src/alertpanel.c:146 src/compose.c:9469
 msgid "Notice"
 msgstr "Huomautus"
 
-#: src/alertpanel.c:159 src/compose.c:5689 src/compose.c:6212
-#: src/compose.c:11917 src/file_checker.c:78 src/file_checker.c:100
-#: src/messageview.c:855 src/messageview.c:868
-#: src/plugins/pgpcore/sgpgme.c:750 src/plugins/vcalendar/vcalendar.c:125
-#: src/summaryview.c:4892
+#: src/alertpanel.c:159 src/compose.c:5680 src/compose.c:6203
+#: src/compose.c:11904 src/file_checker.c:78 src/file_checker.c:100
+#: src/messageview.c:855 src/messageview.c:868 src/plugins/pgpcore/sgpgme.c:746
+#: src/plugins/vcalendar/vcalendar.c:125 src/summaryview.c:4892
 msgid "Warning"
 msgstr "Varoitus"
 
-#: src/alertpanel.c:172 src/alertpanel.c:195 src/compose.c:5630 src/inc.c:669
-#: src/plugins/pgpcore/sgpgme.c:151 src/plugins/pgpcore/sgpgme.c:280
+#: src/alertpanel.c:172 src/alertpanel.c:195 src/compose.c:5621 src/inc.c:669
+#: src/plugins/pgpcore/sgpgme.c:151 src/plugins/pgpcore/sgpgme.c:276
 msgid "Error"
 msgstr "Virhe"
 
@@ -1853,7 +1852,7 @@ msgstr "Piilokopio:"
 msgid "Reply-To:"
 msgstr "Vastausosoite:"
 
-#: src/compose.c:2613 src/compose.c:4944 src/compose.c:4946
+#: src/compose.c:2613 src/compose.c:4935 src/compose.c:4937
 #: src/gtk/headers.h:33
 msgid "Newsgroups:"
 msgstr "Uutisryhmät:"
@@ -1866,7 +1865,7 @@ msgstr "Keskustelunsiirto:"
 msgid "In-Reply-To:"
 msgstr "Vastauksena viestiin:"
 
-#: src/compose.c:2623 src/compose.c:4941 src/compose.c:4949
+#: src/compose.c:2623 src/compose.c:4932 src/compose.c:4940
 #: src/gtk/headers.h:13 src/summary_search.c:433
 msgid "To:"
 msgstr "Vastaanottaja:"
@@ -1895,70 +1894,70 @@ msgstr[1] ""
 msgid "The \"Quotation mark\" of the template is invalid."
 msgstr "Lainausmerkinnät mallineessa ovat väärin"
 
-#: src/compose.c:3611
+#: src/compose.c:3602
 #, c-format
 msgid "Could not get size of file '%s'."
 msgstr "Ei voitu lukea viestitiedoston %s kokoa"
 
-#: src/compose.c:3622
+#: src/compose.c:3613
 #, c-format
 msgid ""
 "You are about to insert a file of %s in the message body. Are you sure you "
 "want to do that?"
 msgstr "Olet lisäämässä tiedostoa %s viestiin. Jatketaanko?"
 
-#: src/compose.c:3625
+#: src/compose.c:3616
 msgid "Are you sure?"
 msgstr "Toteutetaanko?"
 
-#: src/compose.c:3626 src/compose.c:10538 src/compose.c:11399
+#: src/compose.c:3617 src/compose.c:10525 src/compose.c:11386
 msgid "_Insert"
 msgstr "_Lisää"
 
-#: src/compose.c:3750
+#: src/compose.c:3741
 #, c-format
 msgid "File %s is empty."
 msgstr "Tiedosto %s on tyhjä."
 
-#: src/compose.c:3751
+#: src/compose.c:3742
 msgid "Empty file"
 msgstr "Tyhjä tiedosto"
 
-#: src/compose.c:3752
+#: src/compose.c:3743
 msgid "_Attach anyway"
 msgstr "_Liitä kuitenkin"
 
-#: src/compose.c:3761
+#: src/compose.c:3752
 #, c-format
 msgid "Can't read %s."
 msgstr "Tiedostoa %s ei voitu lukea."
 
-#: src/compose.c:3788
+#: src/compose.c:3779
 #, c-format
 msgid "Message: %s"
 msgstr "Viesti: %s"
 
-#: src/compose.c:4781 src/plugins/managesieve/sieve_editor.c:694
+#: src/compose.c:4772 src/plugins/managesieve/sieve_editor.c:694
 #: src/plugins/python/composewindowtype.c:421
 msgid " [Edited]"
 msgstr " [Muokattu]"
 
 # "sylpheed-claws - Muokataan viestiä (MUOKATTU)"
-#: src/compose.c:4788 src/plugins/python/composewindowtype.c:424
+#: src/compose.c:4779 src/plugins/python/composewindowtype.c:424
 #, c-format
 msgid "%s - Compose message%s"
 msgstr "%s — Muokataan viestiä%s"
 
-#: src/compose.c:4791 src/plugins/python/composewindowtype.c:427
+#: src/compose.c:4782 src/plugins/python/composewindowtype.c:427
 #, c-format
 msgid "[no subject] - Compose message%s"
 msgstr "[ei aihetta] — Muokataan viestiä%s"
 
-#: src/compose.c:4793 src/plugins/python/composewindowtype.c:415
+#: src/compose.c:4784 src/plugins/python/composewindowtype.c:415
 msgid "Compose message"
 msgstr "Muokkaa viestiä"
 
-#: src/compose.c:4820 src/messageview.c:890
+#: src/compose.c:4811 src/messageview.c:890
 msgid ""
 "Account for sending mail is not specified.\n"
 "Please select a mail account before sending."
@@ -1966,51 +1965,51 @@ msgstr ""
 "Postin lähetykseen ei ole määritelty tiliä.\n"
 "Valitse postitili ennen lähettämistä."
 
-#: src/compose.c:5040 src/compose.c:5072 src/compose.c:5114
+#: src/compose.c:5031 src/compose.c:5063 src/compose.c:5105
 #: src/prefs_account.c:3270 src/toolbar.c:406 src/toolbar.c:424
 msgid "Send"
 msgstr "Lähetä"
 
-#: src/compose.c:5041
+#: src/compose.c:5032
 msgid "The only recipient is the default CC address. Send anyway?"
 msgstr "Ainoa vastaanottaja on oletuskopio-osoite. Lähetetäänkö silti?"
 
-#: src/compose.c:5042 src/compose.c:5074 src/compose.c:5107 src/compose.c:5631
+#: src/compose.c:5033 src/compose.c:5065 src/compose.c:5098 src/compose.c:5622
 #: src/folderview.c:2438 src/messageview.c:856 src/messageview.c:873
 #: src/plugins/attachwarner/attachwarner.c:210 src/toolbar.c:2629
 msgid "_Send"
 msgstr "_Lähetä"
 
-#: src/compose.c:5073
+#: src/compose.c:5064
 msgid "The only recipient is the default BCC address. Send anyway?"
 msgstr "Ainoa vastaanottaja on oletuspiilokopio-osoite. Lähetetäänkö silti?"
 
-#: src/compose.c:5090
+#: src/compose.c:5081
 msgid "Recipient is not specified."
 msgstr "Vastaanottajaa ei ole määritelty."
 
-#: src/compose.c:5109 src/plugins/attachwarner/attachwarner.c:212
+#: src/compose.c:5100 src/plugins/attachwarner/attachwarner.c:212
 msgid "_Queue"
 msgstr "_Jonoon"
 
-#: src/compose.c:5110
+#: src/compose.c:5101
 #, c-format
 msgid "Subject is empty. %s"
 msgstr "Aihe puuttuu. %s"
 
-#: src/compose.c:5111 src/plugins/attachwarner/attachwarner.c:222
+#: src/compose.c:5102 src/plugins/attachwarner/attachwarner.c:222
 msgid "Send it anyway?"
 msgstr "Lähetetäänkö?"
 
-#: src/compose.c:5112 src/plugins/attachwarner/attachwarner.c:222
+#: src/compose.c:5103 src/plugins/attachwarner/attachwarner.c:222
 msgid "Queue it anyway?"
 msgstr "Lisätäänkö jonoon?"
 
-#: src/compose.c:5114 src/toolbar.c:425
+#: src/compose.c:5105 src/toolbar.c:425
 msgid "Send later"
 msgstr "Lähetä myöhemmin"
 
-#: src/compose.c:5167 src/compose.c:10002
+#: src/compose.c:5158 src/compose.c:9989
 msgid ""
 "Could not queue message for sending:\n"
 "\n"
@@ -2020,7 +2019,7 @@ msgstr ""
 "\n"
 "Merkistön muunnos epäonnistui."
 
-#: src/compose.c:5170 src/compose.c:10005
+#: src/compose.c:5161 src/compose.c:9992
 msgid ""
 "Could not queue message for sending:\n"
 "\n"
@@ -2030,7 +2029,7 @@ msgstr ""
 "\n"
 "Vastaanottajan salausavainta ei saatu."
 
-#: src/compose.c:5176 src/compose.c:9999
+#: src/compose.c:5167 src/compose.c:9986
 #, c-format
 msgid ""
 "Could not queue message for sending:\n"
@@ -2041,7 +2040,7 @@ msgstr ""
 "\n"
 "Allekirjoitus epäonnistui: %s"
 
-#: src/compose.c:5179
+#: src/compose.c:5170
 #, c-format
 msgid ""
 "Could not queue message for sending:\n"
@@ -2052,11 +2051,11 @@ msgstr ""
 "\n"
 "%s."
 
-#: src/compose.c:5181
+#: src/compose.c:5172
 msgid "Could not queue message for sending."
 msgstr "Viestin lisääminen jonoon lähettämistä varten ei onnistunut."
 
-#: src/compose.c:5196 src/compose.c:5256
+#: src/compose.c:5187 src/compose.c:5247
 msgid ""
 "The message was queued but could not be sent.\n"
 "Use \"Send queued messages\" from the main window to retry."
@@ -2065,7 +2064,7 @@ msgstr ""
 "Käytä pääikkunan Lähetä jonottavat viestit -painiketta yrittääksesi "
 "uudelleen."
 
-#: src/compose.c:5252
+#: src/compose.c:5243
 #, c-format
 msgid ""
 "%s\n"
@@ -2075,7 +2074,7 @@ msgstr ""
 "Käytä pääikkunan Lähetä jonottavat viestit -painiketta yrittääksesi "
 "uudelleen."
 
-#: src/compose.c:5627
+#: src/compose.c:5618
 #, c-format
 msgid ""
 "Can't convert the character encoding of the message \n"
@@ -2085,7 +2084,7 @@ msgstr ""
 "Viestin merkistön muutos merkistöstä merkistölle %s\n"
 "ei onnistu, lähetetäänkö se joka merkistöllä %s?"
 
-#: src/compose.c:5685
+#: src/compose.c:5676
 #, c-format
 msgid ""
 "Line %d exceeds the line length limit (998 bytes).\n"
@@ -2098,73 +2097,72 @@ msgstr ""
 "\n"
 "Lähetetäänkö joka tapauksessa?"
 
-#: src/compose.c:5796
+#: src/compose.c:5787
 #, c-format
 msgid "Couldn't encrypt the email: %s"
 msgstr "Ei voitu salata viesti': %s"
 
-#: src/compose.c:5917
+#: src/compose.c:5908
 msgid "Encryption warning"
 msgstr "Salausvaroitus"
 
-#: src/compose.c:5918
+#: src/compose.c:5909
 msgid "C_ontinue"
 msgstr "_Jatka"
 
-#: src/compose.c:5967
+#: src/compose.c:5958
 msgid "No account for sending mails available!"
 msgstr "Sähköpostin lähettämiseen tarkoitettu tiliä ei ole saatavilla!"
 
-#: src/compose.c:5976
+#: src/compose.c:5967
 msgid "Selected account isn't NNTP: Posting is impossible."
 msgstr "Tili ei ole NNTP:lle joten lähetys ei onnistu."
 
-#: src/compose.c:6211
+#: src/compose.c:6202
 #, c-format
 msgid "Attachment %s doesn't exist anymore. Ignore?"
 msgstr "Liitetiedostoa %s ei enää ole, ohitetaanko?"
 
-#: src/compose.c:6212 src/mainwindow.c:651 src/toolbar.c:231
-#: src/toolbar.c:2167
+#: src/compose.c:6203 src/mainwindow.c:651 src/toolbar.c:231 src/toolbar.c:2167
 msgid "Cancel sending"
 msgstr "Peruuta lähetys"
 
-#: src/compose.c:6212
+#: src/compose.c:6203
 msgid "Ignore attachment"
 msgstr "Ohita liite"
 
-#: src/compose.c:6252
+#: src/compose.c:6243
 #, c-format
 msgid "Original %s part"
 msgstr "Alkuperäinen osa %s"
 
-#: src/compose.c:6834
+#: src/compose.c:6821
 msgid "Add to address _book"
 msgstr "Lisää osoitekirj_aan"
 
-#: src/compose.c:6995
+#: src/compose.c:6982
 msgid "Delete entry contents"
 msgstr "Poista kohteen sisältö"
 
-#: src/compose.c:6999 src/plugins/vcalendar/vcal_meeting_gtk.c:289
+#: src/compose.c:6986 src/plugins/vcalendar/vcal_meeting_gtk.c:289
 msgid "Use <tab> to autocomplete from addressbook"
 msgstr "Käytä tabulaattoria automaattiseen täydennykseen osoitekirjasta"
 
-#: src/compose.c:7221
+#: src/compose.c:7208
 msgid "Mime type"
 msgstr "MIME-tyyppi"
 
-#: src/compose.c:7227 src/mimeview.c:273 src/plugins/pgpcore/select-keys.c:394
+#: src/compose.c:7214 src/mimeview.c:273 src/plugins/pgpcore/select-keys.c:394
 #: src/prefs_matcher.c:630 src/prefs_summaries.c:434
 #: src/prefs_summary_column.c:85 src/summaryview.c:444
 msgid "Size"
 msgstr "Koko"
 
-#: src/compose.c:7290
+#: src/compose.c:7277
 msgid "Save Message to "
 msgstr "Tallenna viesti kohteeseen "
 
-#: src/compose.c:7327 src/editjpilot.c:276 src/editldap.c:517
+#: src/compose.c:7314 src/editjpilot.c:276 src/editldap.c:517
 #: src/editvcard.c:192 src/export.c:164 src/import.c:163 src/importmutt.c:238
 #: src/importpine.c:237 src/plugins/archive/archiver_gtk.c:1025
 #: src/plugins/bogofilter/bogofilter_gtk.c:229
@@ -2175,23 +2173,23 @@ msgstr "Tallenna viesti kohteeseen "
 msgid "_Browse"
 msgstr "_Selaa"
 
-#: src/compose.c:7800
+#: src/compose.c:7787
 msgid "Hea_der"
 msgstr "_Otsake"
 
-#: src/compose.c:7805
+#: src/compose.c:7792
 msgid "_Attachments"
 msgstr "_Liitteet"
 
-#: src/compose.c:7819
+#: src/compose.c:7806
 msgid "Othe_rs"
 msgstr "_Muut"
 
-#: src/compose.c:7834
+#: src/compose.c:7821
 msgid "S_ubject:"
 msgstr "_Aihe:"
 
-#: src/compose.c:8058
+#: src/compose.c:8045
 #, c-format
 msgid ""
 "Spell checker could not be started.\n"
@@ -2200,19 +2198,19 @@ msgstr ""
 "Oikolukua ei voitu käynnistää.\n"
 "%s"
 
-#: src/compose.c:8197
+#: src/compose.c:8184
 msgid "_From:"
 msgstr "_Lähettäjä:"
 
-#: src/compose.c:8214
+#: src/compose.c:8201
 msgid "Account to use for this email"
 msgstr "Viestissä käytettävä tili"
 
-#: src/compose.c:8216
+#: src/compose.c:8203
 msgid "Sender address to be used"
 msgstr "Käytettävä lähettäjäosoite"
 
-#: src/compose.c:8382
+#: src/compose.c:8369
 #, c-format
 msgid ""
 "The privacy system '%s' cannot be loaded. You will not be able to sign or "
@@ -2221,68 +2219,68 @@ msgstr ""
 "Salausjärjestelmää %s ei voi ladata. Viestien salaus tai allekirjoitus tälle "
 "viestille ei onnistu."
 
-#: src/compose.c:8483 src/plugins/archive/archiver_gtk.c:1077
+#: src/compose.c:8470 src/plugins/archive/archiver_gtk.c:1077
 msgid "_None"
 msgstr "_Ei mitään"
 
-#: src/compose.c:8584 src/prefs_template.c:760
+#: src/compose.c:8571 src/prefs_template.c:760
 #, c-format
 msgid "The body of the template has an error at line %d."
 msgstr "Mallineen sisällön muotovirhe rivillä %d."
 
-#: src/compose.c:8700
+#: src/compose.c:8687
 msgid "Template From format error."
 msgstr "Mallineen lähettäjän muodon virhe."
 
-#: src/compose.c:8718
+#: src/compose.c:8705
 msgid "Template To format error."
 msgstr "Mallineen vastaanottajan muodon virhe."
 
-#: src/compose.c:8736
+#: src/compose.c:8723
 msgid "Template Cc format error."
 msgstr "Mallineen kopioiden muodon virhe."
 
-#: src/compose.c:8754
+#: src/compose.c:8741
 msgid "Template Bcc format error."
 msgstr "Mallineen piilokopioiden muodon virhe."
 
-#: src/compose.c:8772
+#: src/compose.c:8759
 msgid "Template Reply-To format error."
 msgstr "Mallineen paluuosoitteen muodon virhe."
 
-#: src/compose.c:8791
+#: src/compose.c:8778
 msgid "Template subject format error."
 msgstr "Viestin aiheen muodon virhe."
 
-#: src/compose.c:9060
+#: src/compose.c:9047
 msgid "Invalid MIME type."
 msgstr "Virheellinen MIME-tyyppi."
 
-#: src/compose.c:9075
+#: src/compose.c:9062
 msgid "File doesn't exist or is empty."
 msgstr "Tiedostoa ei ole tai se on tyhjä"
 
-#: src/compose.c:9149
+#: src/compose.c:9136
 msgid "Properties"
 msgstr "Asetukset"
 
-#: src/compose.c:9166
+#: src/compose.c:9153
 msgid "MIME type"
 msgstr "MIME-tyyppi"
 
-#: src/compose.c:9207
+#: src/compose.c:9194
 msgid "Encoding"
 msgstr "Koodaus"
 
-#: src/compose.c:9227
+#: src/compose.c:9214
 msgid "Path"
 msgstr "Polku"
 
-#: src/compose.c:9228
+#: src/compose.c:9215
 msgid "File name"
 msgstr "Tiedostonimi"
 
-#: src/compose.c:9479
+#: src/compose.c:9466
 #, c-format
 msgid ""
 "The external editor is still working.\n"
@@ -2293,15 +2291,15 @@ msgstr ""
 "Suljetaanko se väkisin?\n"
 "prosessiryhmän id: %d"
 
-#: src/compose.c:9968 src/messageview.c:1097
+#: src/compose.c:9955 src/messageview.c:1097
 msgid "Claws Mail needs network access in order to send this email."
 msgstr "Sähköpostin lähettämiseen tarvitaan verkkoyhteyttä."
 
-#: src/compose.c:9994
+#: src/compose.c:9981
 msgid "Could not queue message."
 msgstr "Viestin lisääminen jonoon ei onnistunut."
 
-#: src/compose.c:9996
+#: src/compose.c:9983
 #, c-format
 msgid ""
 "Could not queue message:\n"
@@ -2312,15 +2310,15 @@ msgstr ""
 "\n"
 "%s."
 
-#: src/compose.c:10174
+#: src/compose.c:10161
 msgid "Could not save draft."
 msgstr "Ei voitu tallentaa luonnosta."
 
-#: src/compose.c:10178
+#: src/compose.c:10165
 msgid "Could not save draft"
 msgstr "Ei voitu tallentaa luonnosta"
 
-#: src/compose.c:10179
+#: src/compose.c:10166
 msgid ""
 "Could not save draft.\n"
 "Do you want to cancel exit or discard this email?"
@@ -2328,24 +2326,24 @@ msgstr ""
 "Luonnosta ei voitu tallentaa.\n"
 "Perutaanko lopetus vai poistetaanko viestin?"
 
-#: src/compose.c:10181
+#: src/compose.c:10168
 msgid "_Cancel exit"
 msgstr "_Peru lopetus"
 
-#: src/compose.c:10181
+#: src/compose.c:10168
 msgid "_Discard email"
 msgstr "_Poista viesti"
 
-#: src/compose.c:10341 src/compose.c:10355
+#: src/compose.c:10328 src/compose.c:10342
 msgid "Select file"
 msgstr "Valitse tiedosto"
 
-#: src/compose.c:10369
+#: src/compose.c:10356
 #, c-format
 msgid "File '%s' could not be read."
 msgstr "Tiedostoa ”%s” ei voitu lukea."
 
-#: src/compose.c:10371
+#: src/compose.c:10358
 #, c-format
 msgid ""
 "File '%s' contained invalid characters\n"
@@ -2354,70 +2352,70 @@ msgstr ""
 "Tiedosto ”%s” sisältää nykyiseen koodaukseen\n"
 "sopimattomia merkkejä, lisäykset saattavat olla virheellisiä."
 
-#: src/compose.c:10458
+#: src/compose.c:10445
 msgid "Discard message"
 msgstr "Poista viesti"
 
-#: src/compose.c:10459
+#: src/compose.c:10446
 msgid "This message has been modified. Discard it?"
 msgstr "Tätä viestiä on muokattu, poistetaanko se?"
 
-#: src/compose.c:10460 src/plugins/managesieve/sieve_editor.c:433
+#: src/compose.c:10447 src/plugins/managesieve/sieve_editor.c:433
 msgid "_Discard"
 msgstr "_Poista"
 
-#: src/compose.c:10460 src/compose.c:10464
+#: src/compose.c:10447 src/compose.c:10451
 msgid "_Save to Drafts"
 msgstr "_Pane luonnoksiin"
 
-#: src/compose.c:10462 src/plugins/managesieve/sieve_editor.c:431
+#: src/compose.c:10449 src/plugins/managesieve/sieve_editor.c:431
 msgid "Save changes"
 msgstr "Tallenna muutokset"
 
-#: src/compose.c:10463
+#: src/compose.c:10450
 msgid "This message has been modified. Save the latest changes?"
 msgstr "Tätä viestiä on muokattu, tallennetaanko muutokset?"
 
-#: src/compose.c:10464
+#: src/compose.c:10451
 msgid "_Don't save"
 msgstr "_Älä tallenna"
 
-#: src/compose.c:10535
+#: src/compose.c:10522
 #, c-format
 msgid "Do you want to apply the template '%s'?"
 msgstr "Haluatko käyttää mallinetta ”%s”?"
 
-#: src/compose.c:10537
+#: src/compose.c:10524
 msgid "Apply template"
 msgstr "Käytä mallinetta"
 
-#: src/compose.c:10538 src/prefs_actions.c:329
-#: src/prefs_filtering_action.c:610 src/prefs_filtering.c:477
-#: src/prefs_matcher.c:773 src/prefs_template.c:311 src/prefs_toolbar.c:1050
+#: src/compose.c:10525 src/prefs_actions.c:329 src/prefs_filtering_action.c:610
+#: src/prefs_filtering.c:477 src/prefs_matcher.c:773 src/prefs_template.c:311
+#: src/prefs_toolbar.c:1050
 msgid "_Replace"
 msgstr "_Korvaa"
 
-#: src/compose.c:11396
+#: src/compose.c:11383
 msgid "Insert or attach?"
 msgstr "Liitä vai sisällytä?"
 
-#: src/compose.c:11397
+#: src/compose.c:11384
 msgid ""
 "Do you want to insert the contents of the file(s) into the message body, or "
 "attach it to the email?"
 msgstr ""
 "Haluatko sisällyttää tiedostot viestin sisältöön vai liitetiedostoiksi?"
 
-#: src/compose.c:11399
+#: src/compose.c:11386
 msgid "_Attach"
 msgstr "_Liitä"
 
-#: src/compose.c:11616
+#: src/compose.c:11603
 #, c-format
 msgid "Quote format error at line %d."
 msgstr "Lainausten merkintöjen muotovirhe rivillä %d."
 
-#: src/compose.c:11911
+#: src/compose.c:11898
 #, c-format
 msgid ""
 "You are about to reply to %d messages. Opening the windows could take some "
@@ -3638,10 +3636,10 @@ msgstr "Valitse hakemisto"
 msgid "NewFolder"
 msgstr "UusiKansio"
 
-#: src/foldersel.c:595 src/imap_gtk.c:209 src/imap_gtk.c:215
-#: src/imap_gtk.c:271 src/imap_gtk.c:276 src/mh_gtk.c:154 src/mh_gtk.c:263
-#: src/news_gtk.c:314 src/plugins/mailmbox/plugin_gtk.c:254
-#: src/plugins/mailmbox/plugin_gtk.c:424 src/plugins/rssyl/rssyl_cb_menu.c:206
+#: src/foldersel.c:595 src/imap_gtk.c:209 src/imap_gtk.c:215 src/imap_gtk.c:271
+#: src/imap_gtk.c:276 src/mh_gtk.c:154 src/mh_gtk.c:263 src/news_gtk.c:314
+#: src/plugins/mailmbox/plugin_gtk.c:254 src/plugins/mailmbox/plugin_gtk.c:424
+#: src/plugins/rssyl/rssyl_cb_menu.c:206
 #: src/plugins/vcalendar/vcal_folder.c:2043
 #, c-format
 msgid "'%c' can't be included in folder name."
@@ -4905,9 +4903,7 @@ msgstr "Kuvakkeiden merkitykset"
 #: src/gtk/icon_legend.c:140
 msgid ""
 "The following icons are used to show the status of messages and folders:"
-msgstr ""
-"Seuraavat kuvakkeet kertovat viestien ja kansioiden "
-"tilan:"
+msgstr "Seuraavat kuvakkeet kertovat viestien ja kansioiden tilan:"
 
 #: src/gtk/inputdialog.c:233 src/gtk/inputdialog.c:255
 #, c-format
@@ -5030,9 +5026,7 @@ msgstr "Kuvaus"
 #: src/gtk/pluginwindow.c:374
 #, c-format
 msgid "For more information about plugins see the %sClaws Mail website%s."
-msgstr ""
-"Lisätietoja liitännäisistä saa %sClaws "
-"Mailin sivustolta%s."
+msgstr "Lisätietoja liitännäisistä saa %sClaws Mailin sivustolta%s."
 
 #: src/gtk/pluginwindow.c:415
 msgid "Click here to load one or more plugins"
@@ -5530,8 +5524,7 @@ msgstr " virtavirhe\n"
 
 #: src/imap.c:633
 msgid " parse error (very probably non-RFC compliance from the server)\n"
-msgstr ""
-" jäsennysvirhe (tod.näk. RFC-epäyhteensopiva palvelin)\n"
+msgstr " jäsennysvirhe (tod.näk. RFC-epäyhteensopiva palvelin)\n"
 
 #: src/imap.c:637
 msgid " connection refused\n"
@@ -5547,8 +5540,7 @@ msgstr " sisäinen virhe\n"
 
 #: src/imap.c:646
 msgid " protocol error (very probably non-RFC compliance from the server)\n"
-msgstr ""
-" protokollavirhe (tod.näk. RFC-epäyhteensopiva palvelin)\n"
+msgstr " protokollavirhe (tod.näk. RFC-epäyhteensopiva palvelin)\n"
 
 #: src/imap.c:650
 msgid " connection not accepted\n"
@@ -6066,8 +6058,8 @@ msgstr "tilata"
 msgid "unsubscribe"
 msgstr "epätilata"
 
-#: src/imap_gtk.c:568 src/prefs_folder_item.c:1428
-#: src/prefs_folder_item.c:1456 src/prefs_folder_item.c:1484
+#: src/imap_gtk.c:568 src/prefs_folder_item.c:1428 src/prefs_folder_item.c:1456
+#: src/prefs_folder_item.c:1484
 msgid "Apply to subfolders"
 msgstr "Pätee myös alikansioihin"
 
@@ -8142,8 +8134,7 @@ msgid "Go back to email"
 msgstr "Palaa sähköpostiin"
 
 #: src/mimeview.c:1761 src/mimeview.c:1850 src/mimeview.c:2042
-#: src/mimeview.c:2078 src/mimeview.c:2190
-#: src/plugins/fancy/fancy_viewer.c:424
+#: src/mimeview.c:2078 src/mimeview.c:2190 src/plugins/fancy/fancy_viewer.c:424
 #, c-format
 msgid "Couldn't save the part of multipart message: %s"
 msgstr "Ei voida tallentaa osaa moniosaviestistä: %s"
@@ -8185,7 +8176,6 @@ msgstr ""
 "Liitteen nimeä ei voitu muuntaa merkistöön UTF-16:\n"
 "\n"
 "%s"
-
 
 #: src/mimeview.c:2236
 msgid "Execute untrusted binary?"
@@ -9056,8 +9046,7 @@ msgstr ""
 "Älä tarkasta puuttuvia liitetiedostoja kun edelleenlähetetään tai "
 "uudelleenohjataan"
 
-#: src/plugins/attachwarner/attachwarner_prefs.c:135
-#: src/prefs_msg_colors.c:362
+#: src/plugins/attachwarner/attachwarner_prefs.c:135 src/prefs_msg_colors.c:362
 msgid "Signatures"
 msgstr "Allekirjoitukset"
 
@@ -9167,14 +9156,12 @@ msgstr ""
 "\n"
 "Asetukset ovat valikossa Asetukset→Asetukset→Liitännäiset→BogoFilter"
 
-#: src/plugins/bogofilter/bogofilter.c:1043
-#: src/plugins/bsfilter/bsfilter.c:674
+#: src/plugins/bogofilter/bogofilter.c:1043 src/plugins/bsfilter/bsfilter.c:674
 #: src/plugins/spamassassin/spamassassin.c:651
 msgid "Spam detection"
 msgstr "Roskapostin tunnistus"
 
-#: src/plugins/bogofilter/bogofilter.c:1044
-#: src/plugins/bsfilter/bsfilter.c:675
+#: src/plugins/bogofilter/bogofilter.c:1044 src/plugins/bsfilter/bsfilter.c:675
 #: src/plugins/spamassassin/spamassassin.c:652
 msgid "Spam learning"
 msgstr "Roskapostin oppiminen"
@@ -10168,8 +10155,7 @@ msgstr "Virhe väliaikaistilastoja luettaessa"
 #: src/plugins/libravatar/libravatar_prefs.c:141
 #, c-format
 msgid "Using %s in %d files, %d directories, %d others and %d errors"
-msgstr "Käytössä %s %d tiedostossa, %d hakemistossa, %d muussa "
-"ja %d virheessä"
+msgstr "Käytössä %s %d tiedostossa, %d hakemistossa, %d muussa ja %d virheessä"
 
 #: src/plugins/libravatar/libravatar_prefs.c:150
 #, c-format
@@ -11265,8 +11251,7 @@ msgstr "Anna salasana"
 #: src/plugins/pdf_viewer/poppler_viewer.c:1330
 msgid ""
 "This document is locked and requires a password before it can be opened."
-msgstr ""
-"Tämä on lukittu asiakirja ja sen avaamiseksi tarvitaan salasana."
+msgstr "Tämä on lukittu asiakirja ja sen avaamiseksi tarvitaan salasana."
 
 #: src/plugins/pdf_viewer/poppler_viewer.c:1345
 #, c-format
@@ -11391,8 +11376,7 @@ msgstr "[ei käyttäjätunnistetta]"
 
 #: src/plugins/pgpcore/passphrase.c:261
 msgid "Please enter the passphrase for the new key:"
-msgstr ""
-"Anna salasana uudelle avaimelle:"
+msgstr "Anna salasana uudelle avaimelle:"
 
 #: src/plugins/pgpcore/passphrase.c:264
 msgid "Passphrases did not match.\n"
@@ -11400,9 +11384,7 @@ msgstr "Salasanat eivät täsmää.\n"
 
 #: src/plugins/pgpcore/passphrase.c:268
 msgid "Please re-enter the passphrase for the new key:"
-msgstr ""
-"Anna uudestaan salasana uudelle avaimelle:"
-
+msgstr "Anna uudestaan salasana uudelle avaimelle:"
 
 #: src/plugins/pgpcore/passphrase.c:273
 msgid "Please enter the passphrase for:"
@@ -11550,8 +11532,7 @@ msgstr "Vanhenee"
 msgid "Setting to '0' will store the passphrase for the whole session"
 msgstr "Asettamalla nollaksi salasana muistetaan session ajan"
 
-#: src/plugins/pgpcore/prefs_gpg.c:163
-#: src/plugins/rssyl/rssyl_feed_props.c:475
+#: src/plugins/pgpcore/prefs_gpg.c:163 src/plugins/rssyl/rssyl_feed_props.c:475
 #: src/plugins/rssyl/rssyl_prefs.c:154 src/prefs_receive.c:159
 msgid "minute(s)"
 msgstr "minuutissa"
@@ -11708,66 +11689,61 @@ msgstr "Allekirjoitusta ei ole tarkastettu."
 msgid "PGP Core: Can't get key - no gpg-agent running."
 msgstr "PGP-ydin: Avainta ei saatu — gpg-agent ei ole käynnissä."
 
-#: src/plugins/pgpcore/sgpgme.c:229
-#, c-format
-msgid "The signature can't be checked - %s."
-msgstr "Allekirjoitusta ei voida tarkastaa – %s."
-
-#: src/plugins/pgpcore/sgpgme.c:241
+#: src/plugins/pgpcore/sgpgme.c:231
 #, c-format
 msgid "Good signature from \"%s\" [ultimate]"
 msgstr "Toimiva allekirjoitus käyttäjälle %s [äärimmäinen]"
 
-#: src/plugins/pgpcore/sgpgme.c:244
+#: src/plugins/pgpcore/sgpgme.c:234
 #, c-format
 msgid "Good signature from \"%s\" [full]"
 msgstr "Toimiva allekirjoitus käyttäjälle %s [täysi]"
 
-#: src/plugins/pgpcore/sgpgme.c:247
+#: src/plugins/pgpcore/sgpgme.c:237
 #, c-format
 msgid "Good signature from \"%s\" [marginal]"
 msgstr "Toimiva allekirjoitus käyttäjälle %s [rajallinen]"
 
-#: src/plugins/pgpcore/sgpgme.c:253
+#: src/plugins/pgpcore/sgpgme.c:244
 #, c-format
 msgid "Good signature from \"%s\""
 msgstr "Toimiva allekirjoitus käyttäjälle %s"
 
-#: src/plugins/pgpcore/sgpgme.c:258
+#: src/plugins/pgpcore/sgpgme.c:247 src/plugins/pgpcore/sgpgme.c:267
+#, c-format
+msgid "Key 0x%s not available to verify this signature"
+msgstr "Avain 0x%s tämän allekirjoituksen varmentamiseen puuttuu"
+
+#: src/plugins/pgpcore/sgpgme.c:254
 #, c-format
 msgid "Expired signature from \"%s\""
 msgstr "Vanhentunut allekirjoitus käyttäjälle %s"
 
-#: src/plugins/pgpcore/sgpgme.c:261
+#: src/plugins/pgpcore/sgpgme.c:257
 #, c-format
 msgid "Good signature from \"%s\", but the key has expired"
 msgstr "Toimiva allekirjoitus käyttäjälle %s, mutta avain on vanhentunut"
 
-#: src/plugins/pgpcore/sgpgme.c:264
+#: src/plugins/pgpcore/sgpgme.c:260
 #, c-format
 msgid "Good signature from \"%s\", but the key has been revoked"
 msgstr ""
 "Toimiva allekirjoitus käyttäjälle %s, mutta avain on poistettu käytöstä"
 
-#: src/plugins/pgpcore/sgpgme.c:267
+#: src/plugins/pgpcore/sgpgme.c:263
 #, c-format
 msgid "Bad signature from \"%s\""
 msgstr "Virheellinen allekirjoitus käyttäjälle %s"
 
-#: src/plugins/pgpcore/sgpgme.c:271
-#, c-format
-msgid "Key 0x%s not available to verify this signature"
-msgstr "Avain 0x%s tämän allekirjoituksen varmentamiseen puuttuu"
-
-#: src/plugins/pgpcore/sgpgme.c:276
+#: src/plugins/pgpcore/sgpgme.c:272
 msgid "The signature has not been checked"
 msgstr "Allekirjoitusta ei ole tarkastettu"
 
-#: src/plugins/pgpcore/sgpgme.c:295
+#: src/plugins/pgpcore/sgpgme.c:291
 msgid "Error checking signature: no status\n"
 msgstr "Allekirjoituksen tarkastuksessa virhe: ei tilaa\n"
 
-#: src/plugins/pgpcore/sgpgme.c:313
+#: src/plugins/pgpcore/sgpgme.c:309
 #, c-format
 msgid "Error checking signature: %s\n"
 msgstr "Allekirjoituksen tarkastuksessa virhe: %s\n"
@@ -11775,99 +11751,99 @@ msgstr "Allekirjoituksen tarkastuksessa virhe: %s\n"
 # eg:
 # Allekirjoitus on tehty su 27. maaliskuuta 2005 01:56:28
 # avaimen ... tunnisteelle 1234567890ABCDEF
-#: src/plugins/pgpcore/sgpgme.c:331
+#: src/plugins/pgpcore/sgpgme.c:327
 #, c-format
 msgid "Signature made on %s using %s key ID %s\n"
 msgstr "Allekirjoitus on tehty %s avaimen %s tunnisteelle %s\n"
 
-#: src/plugins/pgpcore/sgpgme.c:337
+#: src/plugins/pgpcore/sgpgme.c:333
 #, c-format
 msgid "Good signature from uid \"%s\" (Validity: %s)\n"
 msgstr "Oikea allekirjoitus käyttäjälle %s (Oikeellisuus: %s)\n"
 
-#: src/plugins/pgpcore/sgpgme.c:342
+#: src/plugins/pgpcore/sgpgme.c:338
 #, c-format
 msgid "Expired key uid \"%s\"\n"
 msgstr "Vanhentunut avain käyttäjälle %s\n"
 
-#: src/plugins/pgpcore/sgpgme.c:347
+#: src/plugins/pgpcore/sgpgme.c:343
 #, c-format
 msgid "Expired signature from uid \"%s\" (Validity: %s)\n"
 msgstr "Vanhentunut allekirjoitus käyttäjälle ”%s” (Oikeellisuus: %s)\n"
 
-#: src/plugins/pgpcore/sgpgme.c:352
+#: src/plugins/pgpcore/sgpgme.c:348
 #, c-format
 msgid "Revoked key uid \"%s\"\n"
 msgstr "Avain on poistettu käytöstä, tunniste %s\n"
 
-#: src/plugins/pgpcore/sgpgme.c:357
+#: src/plugins/pgpcore/sgpgme.c:353
 #, c-format
 msgid "BAD signature from \"%s\"\n"
 msgstr "Virheellinen allekirjoitus käyttäjälle ”%s”\n"
 
-#: src/plugins/pgpcore/sgpgme.c:370
+#: src/plugins/pgpcore/sgpgme.c:366
 #, c-format
 msgid "uid \"%s\" (Validity: %s)\n"
 msgstr "tunniste %s (Oikeellisuus: %s)\n"
 
-#: src/plugins/pgpcore/sgpgme.c:372
+#: src/plugins/pgpcore/sgpgme.c:368
 msgid "Revoked"
 msgstr "Poistettu käytöstä"
 
-#: src/plugins/pgpcore/sgpgme.c:377
+#: src/plugins/pgpcore/sgpgme.c:373
 #, c-format
 msgid "Owner Trust: %s\n"
 msgstr "Käyttäjän luotto: %s\n"
 
-#: src/plugins/pgpcore/sgpgme.c:378
+#: src/plugins/pgpcore/sgpgme.c:374
 msgid "No key!"
 msgstr "Avain puuttuu."
 
-#: src/plugins/pgpcore/sgpgme.c:380
+#: src/plugins/pgpcore/sgpgme.c:376
 msgid "Primary key fingerprint:"
 msgstr "Ensiöavaimen sormenjälki:"
 
-#: src/plugins/pgpcore/sgpgme.c:398
+#: src/plugins/pgpcore/sgpgme.c:394
 #, c-format
 msgid "WARNING: Signer's address \"%s\" does not match DNS entry\n"
 msgstr "VAROITUS: Allekirjoittajan osoite %s ja DNS-osoite eivät täsmää\n"
 
-#: src/plugins/pgpcore/sgpgme.c:404
+#: src/plugins/pgpcore/sgpgme.c:400
 #, c-format
 msgid "Verified signer's address is \"%s\"\n"
 msgstr "Allekirjoittajan varmistettu osoite on %s\n"
 
-#: src/plugins/pgpcore/sgpgme.c:438
+#: src/plugins/pgpcore/sgpgme.c:434
 #, c-format
 msgid "Couldn't get data from message, %s"
 msgstr "Ei voitu hakea dataa viestille %s"
 
-#: src/plugins/pgpcore/sgpgme.c:454
+#: src/plugins/pgpcore/sgpgme.c:450
 #, c-format
 msgid "Couldn't initialize data, %s"
 msgstr "Ei voitu alustaa dataa %s"
 
-#: src/plugins/pgpcore/sgpgme.c:609
+#: src/plugins/pgpcore/sgpgme.c:605
 msgid "Secret key specification is ambiguous"
 msgstr "Salaisen avaimen määritelmä on moniselitteinen"
 
-#: src/plugins/pgpcore/sgpgme.c:619
+#: src/plugins/pgpcore/sgpgme.c:615
 #, c-format
 msgid "Secret key not found (%s)"
 msgstr "Salaista avainta ei löydetty (%s)"
 
-#: src/plugins/pgpcore/sgpgme.c:632
+#: src/plugins/pgpcore/sgpgme.c:628
 #, c-format
 msgid "Error setting secret key: %s"
 msgstr "Virhe salaista avainta haettaessa: %s"
 
-#: src/plugins/pgpcore/sgpgme.c:721
+#: src/plugins/pgpcore/sgpgme.c:717
 #, c-format
 msgid "Gpgme protocol '%s' is unusable: Engine '%s' isn't installed properly."
 msgstr ""
 "Gpgme-käytäntö %s on käyttökelvoton: sovellutusta %s ei ole asennettu oikein"
 
-#: src/plugins/pgpcore/sgpgme.c:727
+#: src/plugins/pgpcore/sgpgme.c:723
 #, c-format
 msgid ""
 "Gpgme protocol '%s' is unusable: Engine '%s' version %s is installed, but "
@@ -11876,12 +11852,12 @@ msgstr ""
 "Gpgme-käytäntö %s on käyttökelvoton: sovellutuksen %s versio %s on "
 "asennettu, mutta %s on vaatimuksena.\n"
 
-#: src/plugins/pgpcore/sgpgme.c:735
+#: src/plugins/pgpcore/sgpgme.c:731
 #, c-format
 msgid "Gpgme protocol '%s' is unusable (unknown problem)"
 msgstr "Gpgme-käytäntö %s on käyttökelvoton (tuntemattomasta syystä)"
 
-#: src/plugins/pgpcore/sgpgme.c:751
+#: src/plugins/pgpcore/sgpgme.c:747
 msgid ""
 "GnuPG is not installed properly, or needs to be upgraded.\n"
 "OpenPGP support disabled."
@@ -11889,17 +11865,17 @@ msgstr ""
 "GnuPG:tä ei ole asennettu oikein, tai se pitää päivittää.\n"
 "OpenPGP-tuki otettu pois päältä."
 
-#: src/plugins/pgpcore/sgpgme.c:785
+#: src/plugins/pgpcore/sgpgme.c:781
 msgid ""
 "You have to save the account's information with \"OK\" before being able to "
 "generate a key pair.\n"
 msgstr "Tilin tiedot pitää tallentaa napista OK ennen avainparin luontia.\n"
 
-#: src/plugins/pgpcore/sgpgme.c:790
+#: src/plugins/pgpcore/sgpgme.c:786
 msgid "No PGP key found"
 msgstr "PGP-avaimia ei löytynyt"
 
-#: src/plugins/pgpcore/sgpgme.c:791
+#: src/plugins/pgpcore/sgpgme.c:787
 msgid ""
 "Claws Mail did not find a secret PGP key, which means that you won't be able "
 "to sign emails or receive encrypted emails.\n"
@@ -11909,22 +11885,22 @@ msgstr ""
 "viestejä voi allekirjoittaa tai vastaanottaa salattuja viestejä.\n"
 "Luodaanko uusi avainpari?"
 
-#: src/plugins/pgpcore/sgpgme.c:861 src/plugins/pgpcore/sgpgme.c:877
+#: src/plugins/pgpcore/sgpgme.c:857 src/plugins/pgpcore/sgpgme.c:873
 #, c-format
 msgid "Couldn't generate a new key pair: %s"
 msgstr "Avainparia ei voitu luoda: %s"
 
-#: src/plugins/pgpcore/sgpgme.c:868
+#: src/plugins/pgpcore/sgpgme.c:864
 msgid ""
 "Generating your new key pair... Please move the mouse around to help "
 "generate entropy..."
 msgstr "Avainparia luodaan... Heiluttele hiirtä entropian aikaansaamiseksi..."
 
-#: src/plugins/pgpcore/sgpgme.c:883
+#: src/plugins/pgpcore/sgpgme.c:879
 msgid "Couldn't generate a new key pair: unknown error"
 msgstr "Avainparia ei voitu luoda: tuntematon virhe"
 
-#: src/plugins/pgpcore/sgpgme.c:887
+#: src/plugins/pgpcore/sgpgme.c:883
 #, c-format
 msgid ""
 "Your new key pair has been generated. Its fingerprint is:\n"
@@ -11937,19 +11913,19 @@ msgstr ""
 "\n"
 "Lähetetäänkö se avainpalvelimelle?"
 
-#: src/plugins/pgpcore/sgpgme.c:891
+#: src/plugins/pgpcore/sgpgme.c:887
 msgid "Key generated"
 msgstr "Avain luotu"
 
-#: src/plugins/pgpcore/sgpgme.c:930
+#: src/plugins/pgpcore/sgpgme.c:926
 msgid "Key exported."
 msgstr "Avain tuotu."
 
-#: src/plugins/pgpcore/sgpgme.c:932
+#: src/plugins/pgpcore/sgpgme.c:928
 msgid "Couldn't export key."
 msgstr "Ei voi tuoda avainta."
 
-#: src/plugins/pgpcore/sgpgme.c:936
+#: src/plugins/pgpcore/sgpgme.c:932
 msgid "Key export isn't implemented in Windows."
 msgstr "Avaimen hakua ei tueta Windows-järjestelmissä."
 
@@ -11969,10 +11945,10 @@ msgstr "Ei hakea tekstidataa."
 msgid "Couldn't convert text data to any sane charset."
 msgstr "Tekstidataa ei voitu muuntaa järjelliseen merkistökoodaukseen."
 
-#: src/plugins/pgpinline/pgpinline.c:196 src/plugins/pgpinline/pgpinline.c:518
-#: src/plugins/pgpinline/pgpinline.c:657 src/plugins/pgpinline/pgpinline.c:713
-#: src/plugins/pgpmime/pgpmime.c:183 src/plugins/pgpmime/pgpmime.c:329
-#: src/plugins/pgpmime/pgpmime.c:509 src/plugins/pgpmime/pgpmime.c:652
+#: src/plugins/pgpinline/pgpinline.c:196 src/plugins/pgpinline/pgpinline.c:526
+#: src/plugins/pgpinline/pgpinline.c:665 src/plugins/pgpinline/pgpinline.c:721
+#: src/plugins/pgpmime/pgpmime.c:183 src/plugins/pgpmime/pgpmime.c:391
+#: src/plugins/pgpmime/pgpmime.c:576 src/plugins/pgpmime/pgpmime.c:719
 #: src/plugins/smime/smime.c:415
 #, c-format
 msgid "Couldn't initialize GPG context, %s"
@@ -11982,15 +11958,16 @@ msgstr "GPG-kontekstin alustus epäonnistui, %s"
 msgid "Couldn't parse mime part."
 msgstr "Ei voitu jäsentää MIME-osaa."
 
-#: src/plugins/pgpinline/pgpinline.c:345 src/plugins/pgpmime/pgpmime.c:352
+#: src/plugins/pgpinline/pgpinline.c:345 src/plugins/pgpmime/pgpmime.c:419
 #, c-format
 msgid "Couldn't open decrypted file %s"
 msgstr "Ei voitu avata purettua tiedostoa %s"
 
 #: src/plugins/pgpinline/pgpinline.c:362 src/plugins/pgpinline/pgpinline.c:371
 #: src/plugins/pgpinline/pgpinline.c:380 src/plugins/pgpinline/pgpinline.c:388
-#: src/plugins/pgpinline/pgpinline.c:398 src/plugins/pgpinline/pgpinline.c:407
-#: src/plugins/pgpmime/pgpmime.c:363 src/plugins/pgpmime/pgpmime.c:377
+#: src/plugins/pgpinline/pgpinline.c:395 src/plugins/pgpinline/pgpinline.c:406
+#: src/plugins/pgpinline/pgpinline.c:415 src/plugins/pgpmime/pgpmime.c:430
+#: src/plugins/pgpmime/pgpmime.c:444
 #, c-format
 msgid "Couldn't write to decrypted file %s"
 msgstr "Ei voitu kirjoittaa purettuun tiedostoon %s"
@@ -12004,51 +11981,51 @@ msgstr ""
 "\n"
 "--- PGP/Inline-salatun datan alku ---\n"
 
-#: src/plugins/pgpinline/pgpinline.c:394 src/plugins/pgpinline/pgpinline.c:395
-#: src/plugins/pgpinline/pgpinline.c:396
+#: src/plugins/pgpinline/pgpinline.c:402 src/plugins/pgpinline/pgpinline.c:403
+#: src/plugins/pgpinline/pgpinline.c:404
 msgid "--- End of PGP/Inline encrypted data ---\n"
 msgstr "--- PGP/Inline-salatun datan loppu ---\n"
 
-#: src/plugins/pgpinline/pgpinline.c:415 src/plugins/pgpmime/pgpmime.c:389
+#: src/plugins/pgpinline/pgpinline.c:423 src/plugins/pgpmime/pgpmime.c:456
 #, c-format
 msgid "Couldn't close decrypted file %s"
 msgstr "Ei voitu sulkea purettua tiedostoa %s"
 
-#: src/plugins/pgpinline/pgpinline.c:427
+#: src/plugins/pgpinline/pgpinline.c:435
 msgid "Couldn't scan decrypted file."
 msgstr "Purettua tiedostoa ei voitu lukea."
 
-#: src/plugins/pgpinline/pgpinline.c:435
+#: src/plugins/pgpinline/pgpinline.c:443
 msgid "Couldn't scan decrypted file parts."
 msgstr "Puretun tiedoston osia ei voitu lukea."
 
-#: src/plugins/pgpinline/pgpinline.c:492 src/plugins/pgpinline/pgpinline.c:684
+#: src/plugins/pgpinline/pgpinline.c:500 src/plugins/pgpinline/pgpinline.c:692
 msgid "Malformed message"
 msgstr "Viallinen viesti"
 
-#: src/plugins/pgpinline/pgpinline.c:503
+#: src/plugins/pgpinline/pgpinline.c:511
 msgid "Couldn't create temporary file."
 msgstr "Väliaikaistiedoston luonti ei onnistunut."
 
-#: src/plugins/pgpinline/pgpinline.c:542 src/plugins/pgpmime/pgpmime.c:536
+#: src/plugins/pgpinline/pgpinline.c:550 src/plugins/pgpmime/pgpmime.c:603
 #, c-format
 msgid "Data signing failed, %s"
 msgstr "Allekirjoitus epäonnistui, %s"
 
-#: src/plugins/pgpinline/pgpinline.c:560 src/plugins/pgpmime/pgpmime.c:563
+#: src/plugins/pgpinline/pgpinline.c:568 src/plugins/pgpmime/pgpmime.c:630
 #, c-format
 msgid "Data signing failed due to invalid signer: %s"
 msgstr "Allekirjoitus epäonnistui huonon allekirjoittajan takia: %s"
 
-#: src/plugins/pgpinline/pgpinline.c:569 src/plugins/pgpmime/pgpmime.c:572
+#: src/plugins/pgpinline/pgpinline.c:577 src/plugins/pgpmime/pgpmime.c:639
 msgid "Data signing failed, no results."
 msgstr "Allekirjoitus epäonnistui, ei tuloksia"
 
-#: src/plugins/pgpinline/pgpinline.c:579 src/plugins/pgpmime/pgpmime.c:583
+#: src/plugins/pgpinline/pgpinline.c:587 src/plugins/pgpmime/pgpmime.c:650
 msgid "Data signing failed, no contents."
 msgstr "Allekirjoitus epäonnistui, ei sisältöä"
 
-#: src/plugins/pgpinline/pgpinline.c:623
+#: src/plugins/pgpinline/pgpinline.c:631
 msgid ""
 "Please note that attachments are not encrypted by the PGP/Inline system, nor "
 "are email headers, like Subject."
@@ -12056,22 +12033,22 @@ msgstr ""
 "Huomaa, että liitteitä eikä otsakkeita, kuten aihetta, ei ole salattuPGP/"
 "Inline-menetelmässä."
 
-#: src/plugins/pgpinline/pgpinline.c:667 src/plugins/pgpmime/pgpmime.c:662
+#: src/plugins/pgpinline/pgpinline.c:675 src/plugins/pgpmime/pgpmime.c:729
 #, c-format
 msgid "Couldn't add GPG key %s, %s"
 msgstr "Ei voitu lisätä GPG-avainta %s, %s"
 
-#: src/plugins/pgpinline/pgpinline.c:695 src/plugins/pgpmime/pgpmime.c:691
+#: src/plugins/pgpinline/pgpinline.c:703 src/plugins/pgpmime/pgpmime.c:758
 #, c-format
 msgid "Couldn't create temporary file, %s"
 msgstr "Väliaikaistiedoston luonti ei onnistunut %s"
 
-#: src/plugins/pgpinline/pgpinline.c:726 src/plugins/pgpmime/pgpmime.c:718
+#: src/plugins/pgpinline/pgpinline.c:734 src/plugins/pgpmime/pgpmime.c:785
 #, c-format
 msgid "Encryption failed, %s"
 msgstr "Salaus epäonnistui %s"
 
-#: src/plugins/pgpinline/pgpinline.c:795
+#: src/plugins/pgpinline/pgpinline.c:803
 msgid "PGP/Inline"
 msgstr "PGP-Inline"
 
@@ -12105,31 +12082,31 @@ msgstr ""
 msgid "Signature boundary not found."
 msgstr "Allekirjoituksen rajaa ei löytynyt."
 
-#: src/plugins/pgpmime/pgpmime.c:401 src/plugins/smime/smime.c:496
+#: src/plugins/pgpmime/pgpmime.c:468 src/plugins/smime/smime.c:496
 msgid "Couldn't parse decrypted file."
 msgstr "Purettua tiedostoa ei pystytty lukemaan."
 
-#: src/plugins/pgpmime/pgpmime.c:407 src/plugins/smime/smime.c:503
+#: src/plugins/pgpmime/pgpmime.c:474 src/plugins/smime/smime.c:503
 msgid "Couldn't parse decrypted file parts."
 msgstr "Purettuja tiedoston osia ei pystytty lukemaan."
 
-#: src/plugins/pgpmime/pgpmime.c:455 src/plugins/pgpmime/pgpmime.c:494
+#: src/plugins/pgpmime/pgpmime.c:522 src/plugins/pgpmime/pgpmime.c:561
 #, c-format
 msgid "Couldn't create temporary file: %s"
 msgstr "Väliaikaistiedoston luonti ei onnistunut: %s."
 
-#: src/plugins/pgpmime/pgpmime.c:596
+#: src/plugins/pgpmime/pgpmime.c:663
 msgid "OpenPGP digital signature"
 msgstr "OpenPGP-allekirjoitus"
 
-#: src/plugins/pgpmime/pgpmime.c:618
+#: src/plugins/pgpmime/pgpmime.c:685
 msgid ""
 "Please note that email headers, like Subject, are not encrypted by the PGP/"
 "Mime system."
 msgstr ""
 "Huomaa, että otsakkeita kuten aihetta, ei ole salattu PGP/MIME-menetelmässä."
 
-#: src/plugins/pgpmime/pgpmime.c:790
+#: src/plugins/pgpmime/pgpmime.c:857
 msgid "PGP/Mime"
 msgstr "PGP/MIME"
 
@@ -12514,9 +12491,7 @@ msgstr "Päivitysvuoroväli"
 
 #: src/plugins/rssyl/rssyl_feed_props.c:476
 msgid "Set to 0 to disable automatic refreshing for this feed"
-msgstr ""
-"Aseta nollaksi poistaaksesi tämän syötteen automaattisen "
-"päivityksen"
+msgstr "Aseta nollaksi poistaaksesi tämän syötteen automaattisen päivityksen"
 
 #: src/plugins/rssyl/rssyl_feed_props.c:528
 msgid "_OK"
@@ -12696,7 +12671,7 @@ msgstr "Päivitetään syötettä %s..."
 msgid ""
 "Couldn't process feed at\n"
 "<b>%s</b>\n"
-"\n" 
+"\n"
 "Please contact developers, this should not happen."
 msgstr ""
 "Syötettä ei voitu käsitellä\n"
@@ -13023,8 +12998,7 @@ msgid "Show"
 msgstr "Näytä"
 
 #: src/plugins/vcalendar/day-view.c:614 src/plugins/vcalendar/month-view.c:711
-#: src/prefs_account.c:1476 src/prefs_folder_item.c:553
-#: src/prefs_matcher.c:337
+#: src/prefs_account.c:1476 src/prefs_folder_item.c:553 src/prefs_matcher.c:337
 msgid "days"
 msgstr "päivän jälkeen"
 
@@ -14635,21 +14609,20 @@ msgid "Do you really want to delete all the actions?"
 msgstr "Poistetaanko kaikki toiminnot?"
 
 #: src/prefs_actions.c:898 src/prefs_actions.c:929 src/prefs_filtering.c:1497
-#: src/prefs_filtering.c:1519 src/prefs_matcher.c:2114
-#: src/prefs_template.c:572 src/prefs_template.c:597
+#: src/prefs_filtering.c:1519 src/prefs_matcher.c:2114 src/prefs_template.c:572
+#: src/prefs_template.c:597
 msgid "Entry not saved"
 msgstr "Kenttää on tallentamatta"
 
 #: src/prefs_actions.c:899 src/prefs_actions.c:930 src/prefs_filtering.c:1498
-#: src/prefs_filtering.c:1520 src/prefs_template.c:573
-#: src/prefs_template.c:598
+#: src/prefs_filtering.c:1520 src/prefs_template.c:573 src/prefs_template.c:598
 msgid "The entry was not saved. Close anyway?"
 msgstr "Kenttää ei ole tallennettu, suljetaanko joka tapauksessa?"
 
 #: src/prefs_actions.c:900 src/prefs_actions.c:905 src/prefs_actions.c:931
 #: src/prefs_filtering.c:1477 src/prefs_filtering.c:1499
-#: src/prefs_filtering.c:1521 src/prefs_matcher.c:2117
-#: src/prefs_template.c:574 src/prefs_template.c:599 src/prefs_template.c:604
+#: src/prefs_filtering.c:1521 src/prefs_matcher.c:2117 src/prefs_template.c:574
+#: src/prefs_template.c:599 src/prefs_template.c:604
 msgid "_Continue editing"
 msgstr "_Jatka muokkausta"
 
@@ -15368,9 +15341,9 @@ msgid ""
 "However, you can set them for the whole mailbox tree by using \"Apply to "
 "subfolders\"."
 msgstr ""
-"Näitä asetuksia ei tallenneta tallenneta kansioasetuksiksi, koska "
-"kyseessä on juurikansio. Voit kuitenkin käyttää niitä koko postilaatikon "
-"asetuksina ruksimalla Pätee myös alikansioihin ‐valinnan."
+"Näitä asetuksia ei tallenneta tallenneta kansioasetuksiksi, koska kyseessä "
+"on juurikansio. Voit kuitenkin käyttää niitä koko postilaatikon asetuksina "
+"ruksimalla Pätee myös alikansioihin ‐valinnan."
 
 #: src/prefs_folder_item.c:274 src/prefs_folder_item.c:876
 msgid ""
@@ -18407,8 +18380,7 @@ msgstr "Tägit: "
 
 #: src/textview.c:2894
 msgid "The real URL is different from the displayed URL."
-msgstr ""
-"Oikea URL on eri kuin odotuksenmukainen."
+msgstr "Oikea URL on eri kuin odotuksenmukainen."
 
 #: src/textview.c:2895
 msgid "Displayed URL:"
@@ -18894,8 +18866,7 @@ msgstr "Käytä todennusta"
 
 #: src/wizard.c:1121
 msgid "(empty to use the same as receive)"
-msgstr ""
-"(jätä tyhjäksi käyttääksesi samaa kuin viestien hakemisessa)"
+msgstr "(jätä tyhjäksi käyttääksesi samaa kuin viestien hakemisessa)"
 
 #: src/wizard.c:1135
 msgid "SMTP username:"
@@ -19011,6 +18982,9 @@ msgid ""
 msgstr ""
 "Claws Mail on valmis\n"
 "Tallenna‐painikkeella aloitetaan."
+
+#~ msgid "The signature can't be checked - %s."
+#~ msgstr "Allekirjoitusta ei voida tarkastaa – %s."
 
 #~ msgid "+_Insert"
 #~ msgstr "_Sisällytä"

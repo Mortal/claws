@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Claws Mail 3.11.1\n"
 "Report-Msgid-Bugs-To: paul@claws-mail.org\n"
-"POT-Creation-Date: 2015-12-14 12:58+0100\n"
+"POT-Creation-Date: 2016-07-31 12:35+0200\n"
 "PO-Revision-Date: 2015-12-14 12:58+0100\n"
 "Last-Translator: Marcel Pol <marcel@timelord.nl>\n"
 "Language-Team: translators@lists.claws-mail.org\n"
@@ -92,7 +92,7 @@ msgid "'Get Mail' retrieves mail from the checked accounts"
 msgstr "'Ophalen' haalt berichten op voor de aangevinkte accounts"
 
 #: src/account.c:1567 src/addrduplicates.c:471 src/addressadd.c:215
-#: src/addressbook.c:125 src/compose.c:7233 src/editaddress.c:1265
+#: src/addressbook.c:125 src/compose.c:7220 src/editaddress.c:1265
 #: src/editaddress.c:1322 src/editaddress.c:1342
 #: src/editaddress_other_attributes_ldap.c:302
 #: src/editaddress_other_attributes_ldap.c:350 src/editbook.c:170
@@ -955,19 +955,19 @@ msgstr "Adressen update"
 msgid "Update failed. Changes not written to Directory."
 msgstr "Update mislukt. Wijzigingen niet opgeslagen naar map."
 
-#: src/alertpanel.c:146 src/compose.c:9482
+#: src/alertpanel.c:146 src/compose.c:9469
 msgid "Notice"
 msgstr "Bericht"
 
-#: src/alertpanel.c:159 src/compose.c:5689 src/compose.c:6212
-#: src/compose.c:11917 src/file_checker.c:78 src/file_checker.c:100
-#: src/messageview.c:855 src/messageview.c:868 src/plugins/pgpcore/sgpgme.c:750
+#: src/alertpanel.c:159 src/compose.c:5680 src/compose.c:6203
+#: src/compose.c:11904 src/file_checker.c:78 src/file_checker.c:100
+#: src/messageview.c:855 src/messageview.c:868 src/plugins/pgpcore/sgpgme.c:746
 #: src/plugins/vcalendar/vcalendar.c:125 src/summaryview.c:4892
 msgid "Warning"
 msgstr "Waarschuwing"
 
-#: src/alertpanel.c:172 src/alertpanel.c:195 src/compose.c:5630 src/inc.c:669
-#: src/plugins/pgpcore/sgpgme.c:151 src/plugins/pgpcore/sgpgme.c:280
+#: src/alertpanel.c:172 src/alertpanel.c:195 src/compose.c:5621 src/inc.c:669
+#: src/plugins/pgpcore/sgpgme.c:151 src/plugins/pgpcore/sgpgme.c:276
 msgid "Error"
 msgstr "Fout"
 
@@ -1855,7 +1855,7 @@ msgstr "Bcc:"
 msgid "Reply-To:"
 msgstr "Reply-To:"
 
-#: src/compose.c:2613 src/compose.c:4944 src/compose.c:4946
+#: src/compose.c:2613 src/compose.c:4935 src/compose.c:4937
 #: src/gtk/headers.h:33
 msgid "Newsgroups:"
 msgstr "Nieuwsgroepen:"
@@ -1868,7 +1868,7 @@ msgstr "Followup-To:"
 msgid "In-Reply-To:"
 msgstr "In antwoord aan:"
 
-#: src/compose.c:2623 src/compose.c:4941 src/compose.c:4949
+#: src/compose.c:2623 src/compose.c:4932 src/compose.c:4940
 #: src/gtk/headers.h:13 src/summary_search.c:433
 msgid "To:"
 msgstr "Aan:"
@@ -1892,12 +1892,12 @@ msgstr[1] "De bestanden '%s' zijn toegevoegd:"
 msgid "The \"Quotation mark\" of the template is invalid."
 msgstr "De \"Citatie-markering\" van het sjabloon is ongeldig."
 
-#: src/compose.c:3611
+#: src/compose.c:3602
 #, c-format
 msgid "Could not get size of file '%s'."
 msgstr "Kon grootte van bestand '%s' niet opvragen"
 
-#: src/compose.c:3622
+#: src/compose.c:3613
 #, c-format
 msgid ""
 "You are about to insert a file of %s in the message body. Are you sure you "
@@ -1906,57 +1906,57 @@ msgstr ""
 "Je staat op het punt een bestand van %s in de berichttekst in te voegen. Wil "
 "je doorgaan?"
 
-#: src/compose.c:3625
+#: src/compose.c:3616
 msgid "Are you sure?"
 msgstr "Wil je doorgaan?"
 
-#: src/compose.c:3626 src/compose.c:10538 src/compose.c:11399
+#: src/compose.c:3617 src/compose.c:10525 src/compose.c:11386
 msgid "_Insert"
 msgstr "_Invoegen"
 
-#: src/compose.c:3750
+#: src/compose.c:3741
 #, c-format
 msgid "File %s is empty."
 msgstr "Bestand %s is leeg."
 
-#: src/compose.c:3751
+#: src/compose.c:3742
 msgid "Empty file"
 msgstr "Leeg bestand"
 
-#: src/compose.c:3752
+#: src/compose.c:3743
 msgid "_Attach anyway"
 msgstr "Voeg toch bij"
 
-#: src/compose.c:3761
+#: src/compose.c:3752
 #, c-format
 msgid "Can't read %s."
 msgstr "Kan %s niet lezen."
 
-#: src/compose.c:3788
+#: src/compose.c:3779
 #, c-format
 msgid "Message: %s"
 msgstr "Bericht: %s"
 
-#: src/compose.c:4781 src/plugins/managesieve/sieve_editor.c:694
+#: src/compose.c:4772 src/plugins/managesieve/sieve_editor.c:694
 #: src/plugins/python/composewindowtype.c:421
 msgid " [Edited]"
 msgstr " [Aangepast]"
 
-#: src/compose.c:4788 src/plugins/python/composewindowtype.c:424
+#: src/compose.c:4779 src/plugins/python/composewindowtype.c:424
 #, c-format
 msgid "%s - Compose message%s"
 msgstr "%s - Bericht opstellen%s"
 
-#: src/compose.c:4791 src/plugins/python/composewindowtype.c:427
+#: src/compose.c:4782 src/plugins/python/composewindowtype.c:427
 #, c-format
 msgid "[no subject] - Compose message%s"
 msgstr "[geen onderwerp] - Bericht opstellen%s"
 
-#: src/compose.c:4793 src/plugins/python/composewindowtype.c:415
+#: src/compose.c:4784 src/plugins/python/composewindowtype.c:415
 msgid "Compose message"
 msgstr "Bericht opstellen"
 
-#: src/compose.c:4820 src/messageview.c:890
+#: src/compose.c:4811 src/messageview.c:890
 msgid ""
 "Account for sending mail is not specified.\n"
 "Please select a mail account before sending."
@@ -1964,51 +1964,51 @@ msgstr ""
 "Geen account opgegeven voor het verzenden van berichten.\n"
 "Selecteer eerst een account."
 
-#: src/compose.c:5040 src/compose.c:5072 src/compose.c:5114
+#: src/compose.c:5031 src/compose.c:5063 src/compose.c:5105
 #: src/prefs_account.c:3270 src/toolbar.c:406 src/toolbar.c:424
 msgid "Send"
 msgstr "Verzenden"
 
-#: src/compose.c:5041
+#: src/compose.c:5032
 msgid "The only recipient is the default CC address. Send anyway?"
 msgstr "De enige ontvanger is het standaard CC-adres. Toch verzenden?"
 
-#: src/compose.c:5042 src/compose.c:5074 src/compose.c:5107 src/compose.c:5631
+#: src/compose.c:5033 src/compose.c:5065 src/compose.c:5098 src/compose.c:5622
 #: src/folderview.c:2438 src/messageview.c:856 src/messageview.c:873
 #: src/plugins/attachwarner/attachwarner.c:210 src/toolbar.c:2629
 msgid "_Send"
 msgstr "_Verzenden"
 
-#: src/compose.c:5073
+#: src/compose.c:5064
 msgid "The only recipient is the default BCC address. Send anyway?"
 msgstr "De enige ontvanger is het standaard BCC-adres. Toch verzenden?"
 
-#: src/compose.c:5090
+#: src/compose.c:5081
 msgid "Recipient is not specified."
 msgstr "Geen ontvanger opgegeven."
 
-#: src/compose.c:5109 src/plugins/attachwarner/attachwarner.c:212
+#: src/compose.c:5100 src/plugins/attachwarner/attachwarner.c:212
 msgid "_Queue"
 msgstr "_Wachtrij"
 
-#: src/compose.c:5110
+#: src/compose.c:5101
 #, c-format
 msgid "Subject is empty. %s"
 msgstr "Het onderwerp is leeg. %s"
 
-#: src/compose.c:5111 src/plugins/attachwarner/attachwarner.c:222
+#: src/compose.c:5102 src/plugins/attachwarner/attachwarner.c:222
 msgid "Send it anyway?"
 msgstr "Toch verzenden?"
 
-#: src/compose.c:5112 src/plugins/attachwarner/attachwarner.c:222
+#: src/compose.c:5103 src/plugins/attachwarner/attachwarner.c:222
 msgid "Queue it anyway?"
 msgstr "Toch in de wachtrij zetten?"
 
-#: src/compose.c:5114 src/toolbar.c:425
+#: src/compose.c:5105 src/toolbar.c:425
 msgid "Send later"
 msgstr "Wachtrij"
 
-#: src/compose.c:5167 src/compose.c:10002
+#: src/compose.c:5158 src/compose.c:9989
 msgid ""
 "Could not queue message for sending:\n"
 "\n"
@@ -2018,7 +2018,7 @@ msgstr ""
 "\n"
 "Omzetten van de tekenset mislukt."
 
-#: src/compose.c:5170 src/compose.c:10005
+#: src/compose.c:5161 src/compose.c:9992
 msgid ""
 "Could not queue message for sending:\n"
 "\n"
@@ -2028,7 +2028,7 @@ msgstr ""
 "\n"
 "Kon de sleutel van de ontvanger, nodig voor versleutelen, niet vinden."
 
-#: src/compose.c:5176 src/compose.c:9999
+#: src/compose.c:5167 src/compose.c:9986
 #, c-format
 msgid ""
 "Could not queue message for sending:\n"
@@ -2039,7 +2039,7 @@ msgstr ""
 "\n"
 "Ondertekenen mislukt: %s"
 
-#: src/compose.c:5179
+#: src/compose.c:5170
 #, c-format
 msgid ""
 "Could not queue message for sending:\n"
@@ -2050,11 +2050,11 @@ msgstr ""
 "\n"
 "%s."
 
-#: src/compose.c:5181
+#: src/compose.c:5172
 msgid "Could not queue message for sending."
 msgstr "Kon bericht niet in de wachtrij zetten."
 
-#: src/compose.c:5196 src/compose.c:5256
+#: src/compose.c:5187 src/compose.c:5247
 msgid ""
 "The message was queued but could not be sent.\n"
 "Use \"Send queued messages\" from the main window to retry."
@@ -2063,7 +2063,7 @@ msgstr ""
 "Gebruik \"Verzend berichten uit de wachtrij\" van het hoofdvenster om het "
 "opnieuw te proberen."
 
-#: src/compose.c:5252
+#: src/compose.c:5243
 #, c-format
 msgid ""
 "%s\n"
@@ -2073,7 +2073,7 @@ msgstr ""
 "Gebruik \"Verzend berichten uit de wachtrij\" van het hoofdvenster om het "
 "opnieuw te proberen."
 
-#: src/compose.c:5627
+#: src/compose.c:5618
 #, c-format
 msgid ""
 "Can't convert the character encoding of the message \n"
@@ -2084,7 +2084,7 @@ msgstr ""
 "naar de opgegeven tekenset '%s'.\n"
 "Verzenden met tekenset %s?"
 
-#: src/compose.c:5685
+#: src/compose.c:5676
 #, c-format
 msgid ""
 "Line %d exceeds the line length limit (998 bytes).\n"
@@ -2097,72 +2097,72 @@ msgstr ""
 "worden.\n"
 "Toch verzenden?"
 
-#: src/compose.c:5796
+#: src/compose.c:5787
 #, c-format
 msgid "Couldn't encrypt the email: %s"
 msgstr "Decoderen van e-mail mislukt: %s"
 
-#: src/compose.c:5917
+#: src/compose.c:5908
 msgid "Encryption warning"
 msgstr "Versleutel-waarschuwing"
 
-#: src/compose.c:5918
+#: src/compose.c:5909
 msgid "C_ontinue"
 msgstr "Ga _door met bewerken"
 
-#: src/compose.c:5967
+#: src/compose.c:5958
 msgid "No account for sending mails available!"
 msgstr "Geen account beschikbaar voor het verzenden!"
 
-#: src/compose.c:5976
+#: src/compose.c:5967
 msgid "Selected account isn't NNTP: Posting is impossible."
 msgstr "Geselecteerd account is geen NNTP: Plaatsen is niet mogelijk."
 
-#: src/compose.c:6211
+#: src/compose.c:6202
 #, c-format
 msgid "Attachment %s doesn't exist anymore. Ignore?"
 msgstr "Bijvoegsel %s bestaat niet meer. Negeren?"
 
-#: src/compose.c:6212 src/mainwindow.c:651 src/toolbar.c:231 src/toolbar.c:2167
+#: src/compose.c:6203 src/mainwindow.c:651 src/toolbar.c:231 src/toolbar.c:2167
 msgid "Cancel sending"
 msgstr "Verzenden annuleren"
 
-#: src/compose.c:6212
+#: src/compose.c:6203
 msgid "Ignore attachment"
 msgstr "Negeer bijvoegsel"
 
-#: src/compose.c:6252
+#: src/compose.c:6243
 #, c-format
 msgid "Original %s part"
 msgstr "Origineel %s gedeelte"
 
-#: src/compose.c:6834
+#: src/compose.c:6821
 msgid "Add to address _book"
 msgstr "Toevoegen aan adres_boek"
 
-#: src/compose.c:6995
+#: src/compose.c:6982
 msgid "Delete entry contents"
 msgstr "Verwijder inhoud"
 
-#: src/compose.c:6999 src/plugins/vcalendar/vcal_meeting_gtk.c:289
+#: src/compose.c:6986 src/plugins/vcalendar/vcal_meeting_gtk.c:289
 msgid "Use <tab> to autocomplete from addressbook"
 msgstr "Gebruik <tab> om adressen automatisch af te maken"
 
-#: src/compose.c:7221
+#: src/compose.c:7208
 msgid "Mime type"
 msgstr "MIME-type"
 
-#: src/compose.c:7227 src/mimeview.c:273 src/plugins/pgpcore/select-keys.c:394
+#: src/compose.c:7214 src/mimeview.c:273 src/plugins/pgpcore/select-keys.c:394
 #: src/prefs_matcher.c:630 src/prefs_summaries.c:434
 #: src/prefs_summary_column.c:85 src/summaryview.c:444
 msgid "Size"
 msgstr "Grootte"
 
-#: src/compose.c:7290
+#: src/compose.c:7277
 msgid "Save Message to "
 msgstr "Bericht bewaren in"
 
-#: src/compose.c:7327 src/editjpilot.c:276 src/editldap.c:517
+#: src/compose.c:7314 src/editjpilot.c:276 src/editldap.c:517
 #: src/editvcard.c:192 src/export.c:164 src/import.c:163 src/importmutt.c:238
 #: src/importpine.c:237 src/plugins/archive/archiver_gtk.c:1025
 #: src/plugins/bogofilter/bogofilter_gtk.c:229
@@ -2173,23 +2173,23 @@ msgstr "Bericht bewaren in"
 msgid "_Browse"
 msgstr "_Bladeren"
 
-#: src/compose.c:7800
+#: src/compose.c:7787
 msgid "Hea_der"
 msgstr "Hea_der"
 
-#: src/compose.c:7805
+#: src/compose.c:7792
 msgid "_Attachments"
 msgstr "_Bijvoegsels"
 
-#: src/compose.c:7819
+#: src/compose.c:7806
 msgid "Othe_rs"
 msgstr "Anderen"
 
-#: src/compose.c:7834
+#: src/compose.c:7821
 msgid "S_ubject:"
 msgstr "_Onderwerp:"
 
-#: src/compose.c:8058
+#: src/compose.c:8045
 #, c-format
 msgid ""
 "Spell checker could not be started.\n"
@@ -2198,19 +2198,19 @@ msgstr ""
 "Spellingcontrole kon niet gestart worden.\n"
 "%s"
 
-#: src/compose.c:8197
+#: src/compose.c:8184
 msgid "_From:"
 msgstr "_Van:"
 
-#: src/compose.c:8214
+#: src/compose.c:8201
 msgid "Account to use for this email"
 msgstr "Te gebruiken account voor dit bericht"
 
-#: src/compose.c:8216
+#: src/compose.c:8203
 msgid "Sender address to be used"
 msgstr "Een afzender-adres is verplicht."
 
-#: src/compose.c:8382
+#: src/compose.c:8369
 #, c-format
 msgid ""
 "The privacy system '%s' cannot be loaded. You will not be able to sign or "
@@ -2219,68 +2219,68 @@ msgstr ""
 "Het privacy-systeem '%s' kon niet worden geladen. Het zal niet mogelijk zijn "
 "om dit bericht te ondertekenen of te versleutelen."
 
-#: src/compose.c:8483 src/plugins/archive/archiver_gtk.c:1077
+#: src/compose.c:8470 src/plugins/archive/archiver_gtk.c:1077
 msgid "_None"
 msgstr "G_een"
 
-#: src/compose.c:8584 src/prefs_template.c:760
+#: src/compose.c:8571 src/prefs_template.c:760
 #, c-format
 msgid "The body of the template has an error at line %d."
 msgstr "Opmaakfout in berichttekst-sjabloon op regel %d."
 
-#: src/compose.c:8700
+#: src/compose.c:8687
 msgid "Template From format error."
 msgstr "Opmaakfout in Van-sjabloon."
 
-#: src/compose.c:8718
+#: src/compose.c:8705
 msgid "Template To format error."
 msgstr "Opmaakfout in Aan-sjabloon."
 
-#: src/compose.c:8736
+#: src/compose.c:8723
 msgid "Template Cc format error."
 msgstr "Opmaakfout in Cc-sjabloon."
 
-#: src/compose.c:8754
+#: src/compose.c:8741
 msgid "Template Bcc format error."
 msgstr "Opmaakfout in Bcc-sjabloon."
 
-#: src/compose.c:8772
+#: src/compose.c:8759
 msgid "Template Reply-To format error."
 msgstr "Opmaakfout in Antwoord-Aan sjabloon."
 
-#: src/compose.c:8791
+#: src/compose.c:8778
 msgid "Template subject format error."
 msgstr "Opmaakfout in Onderwerp-sjabloon."
 
-#: src/compose.c:9060
+#: src/compose.c:9047
 msgid "Invalid MIME type."
 msgstr "Ongeldig MIME-type."
 
-#: src/compose.c:9075
+#: src/compose.c:9062
 msgid "File doesn't exist or is empty."
 msgstr "Bestand bestaat niet of is leeg."
 
-#: src/compose.c:9149
+#: src/compose.c:9136
 msgid "Properties"
 msgstr "Eigenschappen"
 
-#: src/compose.c:9166
+#: src/compose.c:9153
 msgid "MIME type"
 msgstr "MIME-type"
 
-#: src/compose.c:9207
+#: src/compose.c:9194
 msgid "Encoding"
 msgstr "Codering"
 
-#: src/compose.c:9227
+#: src/compose.c:9214
 msgid "Path"
 msgstr "Pad"
 
-#: src/compose.c:9228
+#: src/compose.c:9215
 msgid "File name"
 msgstr "Bestandsnaam"
 
-#: src/compose.c:9479
+#: src/compose.c:9466
 #, c-format
 msgid ""
 "The external editor is still working.\n"
@@ -2291,16 +2291,16 @@ msgstr ""
 "Zal ik het programma afbreken?\n"
 "procesgroep id: %d"
 
-#: src/compose.c:9968 src/messageview.c:1097
+#: src/compose.c:9955 src/messageview.c:1097
 msgid "Claws Mail needs network access in order to send this email."
 msgstr ""
 "Claws Mail heeft netwerktoegang nodig voor het verzenden van deze e-mail."
 
-#: src/compose.c:9994
+#: src/compose.c:9981
 msgid "Could not queue message."
 msgstr "Kon bericht niet in de wachtrij zetten."
 
-#: src/compose.c:9996
+#: src/compose.c:9983
 #, c-format
 msgid ""
 "Could not queue message:\n"
@@ -2311,15 +2311,15 @@ msgstr ""
 "\n"
 "%s."
 
-#: src/compose.c:10174
+#: src/compose.c:10161
 msgid "Could not save draft."
 msgstr "Kon klad niet opslaan."
 
-#: src/compose.c:10178
+#: src/compose.c:10165
 msgid "Could not save draft"
 msgstr "Kon klad niet opslaan"
 
-#: src/compose.c:10179
+#: src/compose.c:10166
 msgid ""
 "Could not save draft.\n"
 "Do you want to cancel exit or discard this email?"
@@ -2327,24 +2327,24 @@ msgstr ""
 "Kon klad niet opslaan.\n"
 "Wil je deze e-mail annuleren of weggooien?"
 
-#: src/compose.c:10181
+#: src/compose.c:10168
 msgid "_Cancel exit"
 msgstr "_Annuleren"
 
-#: src/compose.c:10181
+#: src/compose.c:10168
 msgid "_Discard email"
 msgstr "_Gooi e-mail weg"
 
-#: src/compose.c:10341 src/compose.c:10355
+#: src/compose.c:10328 src/compose.c:10342
 msgid "Select file"
 msgstr "Selecteer bestand"
 
-#: src/compose.c:10369
+#: src/compose.c:10356
 #, c-format
 msgid "File '%s' could not be read."
 msgstr "Bestand '%s' kon niet gelezen worden."
 
-#: src/compose.c:10371
+#: src/compose.c:10358
 #, c-format
 msgid ""
 "File '%s' contained invalid characters\n"
@@ -2353,54 +2353,54 @@ msgstr ""
 "Bestand '%s' bevat ongeldige characters\n"
 "voor de huidige codering, invoeging kan onjuist zijn."
 
-#: src/compose.c:10458
+#: src/compose.c:10445
 msgid "Discard message"
 msgstr "Gooi bericht weg"
 
-#: src/compose.c:10459
+#: src/compose.c:10446
 msgid "This message has been modified. Discard it?"
 msgstr "Bericht is gewijzigd, veranderingen laten vervallen?"
 
-#: src/compose.c:10460 src/plugins/managesieve/sieve_editor.c:433
+#: src/compose.c:10447 src/plugins/managesieve/sieve_editor.c:433
 msgid "_Discard"
 msgstr "_Gooi weg"
 
-#: src/compose.c:10460 src/compose.c:10464
+#: src/compose.c:10447 src/compose.c:10451
 msgid "_Save to Drafts"
 msgstr "Opslaan als _klad"
 
-#: src/compose.c:10462 src/plugins/managesieve/sieve_editor.c:431
+#: src/compose.c:10449 src/plugins/managesieve/sieve_editor.c:431
 msgid "Save changes"
 msgstr "Veranderingen opslaan"
 
-#: src/compose.c:10463
+#: src/compose.c:10450
 msgid "This message has been modified. Save the latest changes?"
 msgstr "Bericht is gewijzigd. Veranderingen opslaan?"
 
-#: src/compose.c:10464
+#: src/compose.c:10451
 msgid "_Don't save"
 msgstr "_Niet opslaan"
 
-#: src/compose.c:10535
+#: src/compose.c:10522
 #, c-format
 msgid "Do you want to apply the template '%s'?"
 msgstr "Wil je sjabloon '%s' toepassen?"
 
-#: src/compose.c:10537
+#: src/compose.c:10524
 msgid "Apply template"
 msgstr "Sjabloon toepassen"
 
-#: src/compose.c:10538 src/prefs_actions.c:329 src/prefs_filtering_action.c:610
+#: src/compose.c:10525 src/prefs_actions.c:329 src/prefs_filtering_action.c:610
 #: src/prefs_filtering.c:477 src/prefs_matcher.c:773 src/prefs_template.c:311
 #: src/prefs_toolbar.c:1050
 msgid "_Replace"
 msgstr "_Vervang"
 
-#: src/compose.c:11396
+#: src/compose.c:11383
 msgid "Insert or attach?"
 msgstr "In- of Bijvoegen"
 
-#: src/compose.c:11397
+#: src/compose.c:11384
 msgid ""
 "Do you want to insert the contents of the file(s) into the message body, or "
 "attach it to the email?"
@@ -2408,16 +2408,16 @@ msgstr ""
 "Wil je de inhoud van de bestand(en) invoegen in de tekst van het bericht of "
 "bij het bericht voegen als het verstuurd wordt?"
 
-#: src/compose.c:11399
+#: src/compose.c:11386
 msgid "_Attach"
 msgstr "_Bijvoegen"
 
-#: src/compose.c:11616
+#: src/compose.c:11603
 #, c-format
 msgid "Quote format error at line %d."
 msgstr "Opmaakfout in citaat op regel %d."
 
-#: src/compose.c:11911
+#: src/compose.c:11898
 #, c-format
 msgid ""
 "You are about to reply to %d messages. Opening the windows could take some "
@@ -11806,163 +11806,158 @@ msgstr "Deze ondertekening is nog niet gecontroleerd."
 msgid "PGP Core: Can't get key - no gpg-agent running."
 msgstr "PGP Core: Geen sleutel, er draait geen gpg-agent."
 
-#: src/plugins/pgpcore/sgpgme.c:229
-#, c-format
-msgid "The signature can't be checked - %s."
-msgstr "De ondertekening kan niet worden gecontroleerd - %s."
-
-#: src/plugins/pgpcore/sgpgme.c:241
+#: src/plugins/pgpcore/sgpgme.c:231
 #, c-format
 msgid "Good signature from \"%s\" [ultimate]"
 msgstr "Goedgekeurde ondertekening van \"%s\" [ultimate]"
 
-#: src/plugins/pgpcore/sgpgme.c:244
+#: src/plugins/pgpcore/sgpgme.c:234
 #, c-format
 msgid "Good signature from \"%s\" [full]"
 msgstr "Goedgekeurde ondertekening van \"%s\" [volledig]"
 
-#: src/plugins/pgpcore/sgpgme.c:247
+#: src/plugins/pgpcore/sgpgme.c:237
 #, c-format
 msgid "Good signature from \"%s\" [marginal]"
 msgstr "Goedgekeurde ondertekening van \"%s\" [beperkt]"
 
-#: src/plugins/pgpcore/sgpgme.c:253
+#: src/plugins/pgpcore/sgpgme.c:244
 #, c-format
 msgid "Good signature from \"%s\""
 msgstr "Goedgekeurde ondertekening van \"%s\""
 
-#: src/plugins/pgpcore/sgpgme.c:258
-#, c-format
-msgid "Expired signature from \"%s\""
-msgstr "Verlopen ondertekening van \"%s\""
-
-#: src/plugins/pgpcore/sgpgme.c:261
-#, c-format
-msgid "Good signature from \"%s\", but the key has expired"
-msgstr "Goedgekeurde ondertekening van \"%s\", maar de sleutel is verlopen"
-
-#: src/plugins/pgpcore/sgpgme.c:264
-#, c-format
-msgid "Good signature from \"%s\", but the key has been revoked"
-msgstr "Goedgekeurde ondertekening van \"%s\", maar de sleutel is ingetrokken"
-
-#: src/plugins/pgpcore/sgpgme.c:267
-#, c-format
-msgid "Bad signature from \"%s\""
-msgstr "Foutieve ondertekening van \"%s\""
-
-#: src/plugins/pgpcore/sgpgme.c:271
+#: src/plugins/pgpcore/sgpgme.c:247 src/plugins/pgpcore/sgpgme.c:267
 #, c-format
 msgid "Key 0x%s not available to verify this signature"
 msgstr "Sleutel 0x%s niet beschikbaar om deze ondertekening te verifiëren"
 
-#: src/plugins/pgpcore/sgpgme.c:276
+#: src/plugins/pgpcore/sgpgme.c:254
+#, c-format
+msgid "Expired signature from \"%s\""
+msgstr "Verlopen ondertekening van \"%s\""
+
+#: src/plugins/pgpcore/sgpgme.c:257
+#, c-format
+msgid "Good signature from \"%s\", but the key has expired"
+msgstr "Goedgekeurde ondertekening van \"%s\", maar de sleutel is verlopen"
+
+#: src/plugins/pgpcore/sgpgme.c:260
+#, c-format
+msgid "Good signature from \"%s\", but the key has been revoked"
+msgstr "Goedgekeurde ondertekening van \"%s\", maar de sleutel is ingetrokken"
+
+#: src/plugins/pgpcore/sgpgme.c:263
+#, c-format
+msgid "Bad signature from \"%s\""
+msgstr "Foutieve ondertekening van \"%s\""
+
+#: src/plugins/pgpcore/sgpgme.c:272
 msgid "The signature has not been checked"
 msgstr "Deze ondertekening is nog niet gecontroleerd"
 
-#: src/plugins/pgpcore/sgpgme.c:295
+#: src/plugins/pgpcore/sgpgme.c:291
 msgid "Error checking signature: no status\n"
 msgstr "Fout bij het controleren van de ondertekening: no status\n"
 
-#: src/plugins/pgpcore/sgpgme.c:313
+#: src/plugins/pgpcore/sgpgme.c:309
 #, c-format
 msgid "Error checking signature: %s\n"
 msgstr "Fout bij het controleren van de ondertekening: %s\n"
 
-#: src/plugins/pgpcore/sgpgme.c:331
+#: src/plugins/pgpcore/sgpgme.c:327
 #, c-format
 msgid "Signature made on %s using %s key ID %s\n"
 msgstr "Ondertekening gemaakt op %s met %s sleutel-ID %s\n"
 
-#: src/plugins/pgpcore/sgpgme.c:337
+#: src/plugins/pgpcore/sgpgme.c:333
 #, c-format
 msgid "Good signature from uid \"%s\" (Validity: %s)\n"
 msgstr "Goedgekeurde ondertekening van \"%s\" (Vertrouwen: %s)\n"
 
-#: src/plugins/pgpcore/sgpgme.c:342
+#: src/plugins/pgpcore/sgpgme.c:338
 #, c-format
 msgid "Expired key uid \"%s\"\n"
 msgstr "Verlopen sleutel-uid \"%s\"\n"
 
-#: src/plugins/pgpcore/sgpgme.c:347
+#: src/plugins/pgpcore/sgpgme.c:343
 #, c-format
 msgid "Expired signature from uid \"%s\" (Validity: %s)\n"
 msgstr "Verlopen ondertekening van uid \"%s\" (Vertrouwen: %s)\n"
 
-#: src/plugins/pgpcore/sgpgme.c:352
+#: src/plugins/pgpcore/sgpgme.c:348
 #, c-format
 msgid "Revoked key uid \"%s\"\n"
 msgstr "Ingetrokken sleutel-uid \"%s\"\n"
 
-#: src/plugins/pgpcore/sgpgme.c:357
+#: src/plugins/pgpcore/sgpgme.c:353
 #, c-format
 msgid "BAD signature from \"%s\"\n"
 msgstr "FOUTIEVE ondertekening van \"%s\"\n"
 
-#: src/plugins/pgpcore/sgpgme.c:370
+#: src/plugins/pgpcore/sgpgme.c:366
 #, c-format
 msgid "uid \"%s\" (Validity: %s)\n"
 msgstr "uid \"%s\" (Vertrouwen: %s)\n"
 
-#: src/plugins/pgpcore/sgpgme.c:372
+#: src/plugins/pgpcore/sgpgme.c:368
 msgid "Revoked"
 msgstr "Ingetrokken"
 
-#: src/plugins/pgpcore/sgpgme.c:377
+#: src/plugins/pgpcore/sgpgme.c:373
 #, c-format
 msgid "Owner Trust: %s\n"
 msgstr "Betrouwbaarheid eigenaar: %s\n"
 
-#: src/plugins/pgpcore/sgpgme.c:378
+#: src/plugins/pgpcore/sgpgme.c:374
 msgid "No key!"
 msgstr "Geen sleutel!"
 
-#: src/plugins/pgpcore/sgpgme.c:380
+#: src/plugins/pgpcore/sgpgme.c:376
 msgid "Primary key fingerprint:"
 msgstr "Vingerafdruk van primaire sleutel:"
 
-#: src/plugins/pgpcore/sgpgme.c:398
+#: src/plugins/pgpcore/sgpgme.c:394
 #, c-format
 msgid "WARNING: Signer's address \"%s\" does not match DNS entry\n"
 msgstr ""
 "Waarschuwing: Adres van ondertekenaar \"%s\" klopt niet met DNS ingang\n"
 
-#: src/plugins/pgpcore/sgpgme.c:404
+#: src/plugins/pgpcore/sgpgme.c:400
 #, c-format
 msgid "Verified signer's address is \"%s\"\n"
 msgstr "Adres van geverifieerde ondertekenaar is \"%s\"\n"
 
-#: src/plugins/pgpcore/sgpgme.c:438
+#: src/plugins/pgpcore/sgpgme.c:434
 #, c-format
 msgid "Couldn't get data from message, %s"
 msgstr "Kon geen gegevens van bericht verkrijgen, %s"
 
-#: src/plugins/pgpcore/sgpgme.c:454
+#: src/plugins/pgpcore/sgpgme.c:450
 #, c-format
 msgid "Couldn't initialize data, %s"
 msgstr "Kon gegevens initialiseren, %s"
 
-#: src/plugins/pgpcore/sgpgme.c:609
+#: src/plugins/pgpcore/sgpgme.c:605
 msgid "Secret key specification is ambiguous"
 msgstr "Geheime sleutel-specificatie is onduidelijk"
 
-#: src/plugins/pgpcore/sgpgme.c:619
+#: src/plugins/pgpcore/sgpgme.c:615
 #, c-format
 msgid "Secret key not found (%s)"
 msgstr "Geheime sleutel niet gevonden (%s)"
 
-#: src/plugins/pgpcore/sgpgme.c:632
+#: src/plugins/pgpcore/sgpgme.c:628
 #, c-format
 msgid "Error setting secret key: %s"
 msgstr "Fout bij instellen geheime sleutel: %s"
 
-#: src/plugins/pgpcore/sgpgme.c:721
+#: src/plugins/pgpcore/sgpgme.c:717
 #, c-format
 msgid "Gpgme protocol '%s' is unusable: Engine '%s' isn't installed properly."
 msgstr ""
 "Gpgme-protocol '%s' is onbruikbaar: Engine '%s' is niet goed geïnstalleerd."
 
-#: src/plugins/pgpcore/sgpgme.c:727
+#: src/plugins/pgpcore/sgpgme.c:723
 #, c-format
 msgid ""
 "Gpgme protocol '%s' is unusable: Engine '%s' version %s is installed, but "
@@ -11971,12 +11966,12 @@ msgstr ""
 "Gpgme-protocol '%s' is onbruikbaar: Engine '%s' versie %s is geïnstalleerd, "
 "maar versie %s is nodig.\n"
 
-#: src/plugins/pgpcore/sgpgme.c:735
+#: src/plugins/pgpcore/sgpgme.c:731
 #, c-format
 msgid "Gpgme protocol '%s' is unusable (unknown problem)"
 msgstr "Gpgme-protocol '%s' is onbruikbaar (onbekend probleem)"
 
-#: src/plugins/pgpcore/sgpgme.c:751
+#: src/plugins/pgpcore/sgpgme.c:747
 msgid ""
 "GnuPG is not installed properly, or needs to be upgraded.\n"
 "OpenPGP support disabled."
@@ -11984,7 +11979,7 @@ msgstr ""
 "GnuPG is niet goed geïnstalleerd of moet worden bijgewerkt.\n"
 "OpenPGP-ondersteuning wordt uitgeschakeld."
 
-#: src/plugins/pgpcore/sgpgme.c:785
+#: src/plugins/pgpcore/sgpgme.c:781
 msgid ""
 "You have to save the account's information with \"OK\" before being able to "
 "generate a key pair.\n"
@@ -11992,11 +11987,11 @@ msgstr ""
 "Je dient de informatie van het account op te slaan door op \"OK\" te klikken "
 "alvorens je een sleutelpaar kunt aanmaken.\n"
 
-#: src/plugins/pgpcore/sgpgme.c:790
+#: src/plugins/pgpcore/sgpgme.c:786
 msgid "No PGP key found"
 msgstr "Geen PGP-sleutel gevonden"
 
-#: src/plugins/pgpcore/sgpgme.c:791
+#: src/plugins/pgpcore/sgpgme.c:787
 msgid ""
 "Claws Mail did not find a secret PGP key, which means that you won't be able "
 "to sign emails or receive encrypted emails.\n"
@@ -12006,12 +12001,12 @@ msgstr ""
 "berichten kunt ondertekenen of versleutelde berichten kunt ontvangen.\n"
 "Wil je nu een sleutelpaar aanmaken?"
 
-#: src/plugins/pgpcore/sgpgme.c:861 src/plugins/pgpcore/sgpgme.c:877
+#: src/plugins/pgpcore/sgpgme.c:857 src/plugins/pgpcore/sgpgme.c:873
 #, c-format
 msgid "Couldn't generate a new key pair: %s"
 msgstr "Kon nieuw sleutelpaar niet aanmaken: %s"
 
-#: src/plugins/pgpcore/sgpgme.c:868
+#: src/plugins/pgpcore/sgpgme.c:864
 msgid ""
 "Generating your new key pair... Please move the mouse around to help "
 "generate entropy..."
@@ -12019,11 +12014,11 @@ msgstr ""
 "Je nieuwe sleutelpaar wordt nu aangemaakt... Beweeg je muis heen en weer om "
 "te helpen bij het maken van entropie..."
 
-#: src/plugins/pgpcore/sgpgme.c:883
+#: src/plugins/pgpcore/sgpgme.c:879
 msgid "Couldn't generate a new key pair: unknown error"
 msgstr "Kon nieuw sleutelpaar niet aanmaken: onbekende fout"
 
-#: src/plugins/pgpcore/sgpgme.c:887
+#: src/plugins/pgpcore/sgpgme.c:883
 #, c-format
 msgid ""
 "Your new key pair has been generated. Its fingerprint is:\n"
@@ -12036,19 +12031,19 @@ msgstr ""
 "\n"
 "Wil je de sleutel exporteren naar een sleutel-server?"
 
-#: src/plugins/pgpcore/sgpgme.c:891
+#: src/plugins/pgpcore/sgpgme.c:887
 msgid "Key generated"
 msgstr "Seutel aangemaakt"
 
-#: src/plugins/pgpcore/sgpgme.c:930
+#: src/plugins/pgpcore/sgpgme.c:926
 msgid "Key exported."
 msgstr "Sleutel geëxporteerd."
 
-#: src/plugins/pgpcore/sgpgme.c:932
+#: src/plugins/pgpcore/sgpgme.c:928
 msgid "Couldn't export key."
 msgstr "Kon sleutel niet exporteren."
 
-#: src/plugins/pgpcore/sgpgme.c:936
+#: src/plugins/pgpcore/sgpgme.c:932
 msgid "Key export isn't implemented in Windows."
 msgstr "Seutels exporteren is niet geïmplementeerd onder Windows."
 
@@ -12068,10 +12063,10 @@ msgstr "Kon tekstgegevens niet vinden."
 msgid "Couldn't convert text data to any sane charset."
 msgstr "Kon tekstgegevens naar geen enkel zinnige karakterset converteren."
 
-#: src/plugins/pgpinline/pgpinline.c:196 src/plugins/pgpinline/pgpinline.c:518
-#: src/plugins/pgpinline/pgpinline.c:657 src/plugins/pgpinline/pgpinline.c:713
-#: src/plugins/pgpmime/pgpmime.c:183 src/plugins/pgpmime/pgpmime.c:329
-#: src/plugins/pgpmime/pgpmime.c:509 src/plugins/pgpmime/pgpmime.c:652
+#: src/plugins/pgpinline/pgpinline.c:196 src/plugins/pgpinline/pgpinline.c:526
+#: src/plugins/pgpinline/pgpinline.c:665 src/plugins/pgpinline/pgpinline.c:721
+#: src/plugins/pgpmime/pgpmime.c:183 src/plugins/pgpmime/pgpmime.c:391
+#: src/plugins/pgpmime/pgpmime.c:576 src/plugins/pgpmime/pgpmime.c:719
 #: src/plugins/smime/smime.c:415
 #, c-format
 msgid "Couldn't initialize GPG context, %s"
@@ -12081,15 +12076,16 @@ msgstr "Kon de GPG-context niet initialiseren, %s"
 msgid "Couldn't parse mime part."
 msgstr "Kon mime-gedeelte van bericht niet lezen."
 
-#: src/plugins/pgpinline/pgpinline.c:345 src/plugins/pgpmime/pgpmime.c:352
+#: src/plugins/pgpinline/pgpinline.c:345 src/plugins/pgpmime/pgpmime.c:419
 #, c-format
 msgid "Couldn't open decrypted file %s"
 msgstr "Kon gedecodeerd bestand %s niet openen"
 
 #: src/plugins/pgpinline/pgpinline.c:362 src/plugins/pgpinline/pgpinline.c:371
 #: src/plugins/pgpinline/pgpinline.c:380 src/plugins/pgpinline/pgpinline.c:388
-#: src/plugins/pgpinline/pgpinline.c:398 src/plugins/pgpinline/pgpinline.c:407
-#: src/plugins/pgpmime/pgpmime.c:363 src/plugins/pgpmime/pgpmime.c:377
+#: src/plugins/pgpinline/pgpinline.c:395 src/plugins/pgpinline/pgpinline.c:406
+#: src/plugins/pgpinline/pgpinline.c:415 src/plugins/pgpmime/pgpmime.c:430
+#: src/plugins/pgpmime/pgpmime.c:444
 #, c-format
 msgid "Couldn't write to decrypted file %s"
 msgstr "Kon gedecodeerd bestand %s niet wegschrijven"
@@ -12103,51 +12099,51 @@ msgstr ""
 "\n"
 "--- Begin van PGP/Ingesloten versleutelde data ---\n"
 
-#: src/plugins/pgpinline/pgpinline.c:394 src/plugins/pgpinline/pgpinline.c:395
-#: src/plugins/pgpinline/pgpinline.c:396
+#: src/plugins/pgpinline/pgpinline.c:402 src/plugins/pgpinline/pgpinline.c:403
+#: src/plugins/pgpinline/pgpinline.c:404
 msgid "--- End of PGP/Inline encrypted data ---\n"
 msgstr "--- Einde van PGP/Ingesloten versleutelde data ---\n"
 
-#: src/plugins/pgpinline/pgpinline.c:415 src/plugins/pgpmime/pgpmime.c:389
+#: src/plugins/pgpinline/pgpinline.c:423 src/plugins/pgpmime/pgpmime.c:456
 #, c-format
 msgid "Couldn't close decrypted file %s"
 msgstr "Kon gedecodeerd bestand %s niet sluiten"
 
-#: src/plugins/pgpinline/pgpinline.c:427
+#: src/plugins/pgpinline/pgpinline.c:435
 msgid "Couldn't scan decrypted file."
 msgstr "Kon gedecodeerd bestand niet scannen."
 
-#: src/plugins/pgpinline/pgpinline.c:435
+#: src/plugins/pgpinline/pgpinline.c:443
 msgid "Couldn't scan decrypted file parts."
 msgstr "Kon gedecodeerde bestandsonderdelen niet scannen."
 
-#: src/plugins/pgpinline/pgpinline.c:492 src/plugins/pgpinline/pgpinline.c:684
+#: src/plugins/pgpinline/pgpinline.c:500 src/plugins/pgpinline/pgpinline.c:692
 msgid "Malformed message"
 msgstr "Vervormd bericht"
 
-#: src/plugins/pgpinline/pgpinline.c:503
+#: src/plugins/pgpinline/pgpinline.c:511
 msgid "Couldn't create temporary file."
 msgstr "Kon tijdelijk bestand niet aanmaken."
 
-#: src/plugins/pgpinline/pgpinline.c:542 src/plugins/pgpmime/pgpmime.c:536
+#: src/plugins/pgpinline/pgpinline.c:550 src/plugins/pgpmime/pgpmime.c:603
 #, c-format
 msgid "Data signing failed, %s"
 msgstr "Gegevens ondertekenen mislukt, %s"
 
-#: src/plugins/pgpinline/pgpinline.c:560 src/plugins/pgpmime/pgpmime.c:563
+#: src/plugins/pgpinline/pgpinline.c:568 src/plugins/pgpmime/pgpmime.c:630
 #, c-format
 msgid "Data signing failed due to invalid signer: %s"
 msgstr "Gegevens ondertekenen mislukt wegens ongeldige ondertekenaar: %s"
 
-#: src/plugins/pgpinline/pgpinline.c:569 src/plugins/pgpmime/pgpmime.c:572
+#: src/plugins/pgpinline/pgpinline.c:577 src/plugins/pgpmime/pgpmime.c:639
 msgid "Data signing failed, no results."
 msgstr "Gegevens ondertekenen mislukt, geen resultaten."
 
-#: src/plugins/pgpinline/pgpinline.c:579 src/plugins/pgpmime/pgpmime.c:583
+#: src/plugins/pgpinline/pgpinline.c:587 src/plugins/pgpmime/pgpmime.c:650
 msgid "Data signing failed, no contents."
 msgstr "Gegevens ondertekenen mislukt, geen inhoud."
 
-#: src/plugins/pgpinline/pgpinline.c:623
+#: src/plugins/pgpinline/pgpinline.c:631
 msgid ""
 "Please note that attachments are not encrypted by the PGP/Inline system, nor "
 "are email headers, like Subject."
@@ -12155,22 +12151,22 @@ msgstr ""
 "Let op dat bijvoegsels niet worden versleuteld door het PGP/Ingesloten "
 "systeem, noch e-mail-headers, zoals Onderwerp."
 
-#: src/plugins/pgpinline/pgpinline.c:667 src/plugins/pgpmime/pgpmime.c:662
+#: src/plugins/pgpinline/pgpinline.c:675 src/plugins/pgpmime/pgpmime.c:729
 #, c-format
 msgid "Couldn't add GPG key %s, %s"
 msgstr "Kon GPG-sleutel niet toevoegen %s, %s"
 
-#: src/plugins/pgpinline/pgpinline.c:695 src/plugins/pgpmime/pgpmime.c:691
+#: src/plugins/pgpinline/pgpinline.c:703 src/plugins/pgpmime/pgpmime.c:758
 #, c-format
 msgid "Couldn't create temporary file, %s"
 msgstr "Kon tijdelijk bestand niet aanmaken, %s."
 
-#: src/plugins/pgpinline/pgpinline.c:726 src/plugins/pgpmime/pgpmime.c:718
+#: src/plugins/pgpinline/pgpinline.c:734 src/plugins/pgpmime/pgpmime.c:785
 #, c-format
 msgid "Encryption failed, %s"
 msgstr "Versleutelen mislukt, %s"
 
-#: src/plugins/pgpinline/pgpinline.c:795
+#: src/plugins/pgpinline/pgpinline.c:803
 msgid "PGP/Inline"
 msgstr "PGP/Ingesloten"
 
@@ -12208,24 +12204,24 @@ msgstr ""
 msgid "Signature boundary not found."
 msgstr "Grens van ondertekening niet gevonden"
 
-#: src/plugins/pgpmime/pgpmime.c:401 src/plugins/smime/smime.c:496
+#: src/plugins/pgpmime/pgpmime.c:468 src/plugins/smime/smime.c:496
 msgid "Couldn't parse decrypted file."
 msgstr "Kon gedecodeerd bestand niet lezen."
 
-#: src/plugins/pgpmime/pgpmime.c:407 src/plugins/smime/smime.c:503
+#: src/plugins/pgpmime/pgpmime.c:474 src/plugins/smime/smime.c:503
 msgid "Couldn't parse decrypted file parts."
 msgstr "Kon gedecodeerde bestandsonderdelen niet lezen."
 
-#: src/plugins/pgpmime/pgpmime.c:455 src/plugins/pgpmime/pgpmime.c:494
+#: src/plugins/pgpmime/pgpmime.c:522 src/plugins/pgpmime/pgpmime.c:561
 #, c-format
 msgid "Couldn't create temporary file: %s"
 msgstr "Kon tijdelijk bestand niet aanmaken: %s"
 
-#: src/plugins/pgpmime/pgpmime.c:596
+#: src/plugins/pgpmime/pgpmime.c:663
 msgid "OpenPGP digital signature"
 msgstr "OpenPGP digitale handtekening"
 
-#: src/plugins/pgpmime/pgpmime.c:618
+#: src/plugins/pgpmime/pgpmime.c:685
 msgid ""
 "Please note that email headers, like Subject, are not encrypted by the PGP/"
 "Mime system."
@@ -12233,7 +12229,7 @@ msgstr ""
 "Let op dat e-mail-headers, zoals Onderwerp, niet versleuteld worden door het "
 "PGP/Mime-systeem."
 
-#: src/plugins/pgpmime/pgpmime.c:790
+#: src/plugins/pgpmime/pgpmime.c:857
 msgid "PGP/Mime"
 msgstr "PGP/Mime"
 
@@ -19167,3 +19163,6 @@ msgid ""
 msgstr ""
 "Claws Mail is nu klaar.\n"
 "Klik op 'Opslaan' om te starten."
+
+#~ msgid "The signature can't be checked - %s."
+#~ msgstr "De ondertekening kan niet worden gecontroleerd - %s."
