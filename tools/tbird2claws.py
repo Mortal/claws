@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 
 # Script name : tbird2claws.py
 # Script purpose : Integrate a Thunderbird folder tree to Claws Mail
