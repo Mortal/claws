@@ -17,7 +17,7 @@ if test \( -d .git \); then
     if test \( "$GIT" = "no" \); then
 	AC_MSG_ERROR([*** git not found. See http://git-scm.com/])
     else
-	GIT_VERSION=`git describe --abbrev=6 --dirty --always`
+	GIT_VERSION=`git describe --abbrev=7 --dirty --always`
 	echo "echo ${GIT_VERSION}" > ./version
     fi
 else
